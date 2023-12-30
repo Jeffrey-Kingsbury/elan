@@ -5,6 +5,8 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Buttons","order":6,"path":"folders/Objects/Buttons.yy",},
+    {"name":"warps","order":7,"path":"folders/Objects/warps.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
@@ -15,8 +17,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Buttons","order":6,"path":"folders/Objects/Buttons.yy",},
-    {"name":"warps","order":7,"path":"folders/Objects/warps.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_modern_room_builder","order":12,"path":"sprites/spr_modern_room_builder/spr_modern_room_builder.yy",},
@@ -30,6 +30,7 @@
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"spr_player_SW","order":4,"path":"sprites/spr_player_SW/spr_player_SW.yy",},
     {"name":"spr_player_NW","order":6,"path":"sprites/spr_player_NW/spr_player_NW.yy",},
+    {"name":"obj_textbox","order":8,"path":"objects/obj_textbox/obj_textbox.yy",},
     {"name":"spr_menu_button","order":10,"path":"sprites/spr_menu_button/spr_menu_button.yy",},
     {"name":"spr_player_E","order":1,"path":"sprites/spr_player_E/spr_player_E.yy",},
     {"name":"obj_fade","order":4,"path":"objects/obj_fade/obj_fade.yy",},
@@ -41,5 +42,6 @@
     {"name":"spr_modern_room_objects","order":13,"path":"sprites/spr_modern_room_objects/spr_modern_room_objects.yy",},
     {"name":"spr_player_W","order":3,"path":"sprites/spr_player_W/spr_player_W.yy",},
     {"name":"spr_warp_block","order":14,"path":"sprites/spr_warp_block/spr_warp_block.yy",},
+    {"name":"spr_dialog_box","order":15,"path":"sprites/spr_dialog_box/spr_dialog_box.yy",},
   ],
 }
