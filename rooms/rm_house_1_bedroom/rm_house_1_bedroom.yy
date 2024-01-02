@@ -17,6 +17,7 @@
     {"name":"inst_591457D6","path":"rooms/rm_house_1_bedroom/rm_house_1_bedroom.yy",},
     {"name":"inst_67208F8A","path":"rooms/rm_house_1_bedroom/rm_house_1_bedroom.yy",},
     {"name":"inst_C77B169","path":"rooms/rm_house_1_bedroom/rm_house_1_bedroom.yy",},
+    {"name":"inst_5FBCD6EA","path":"rooms/rm_house_1_bedroom/rm_house_1_bedroom.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -37,6 +38,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_591457D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":640.0,"y":480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67208F8A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_warp_to_house_01","path":"objects/obj_warp_to_house_01/obj_warp_to_house_01.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":468.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C77B169","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5FBCD6EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":320.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2_1","depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.05",},

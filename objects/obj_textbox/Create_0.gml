@@ -7,7 +7,7 @@ line_sep = 12;
 line_width = textbox_width - border * 2;
 txtb_spr = spr_dialog_box;
 txtb_img = 0;
-txtb_img_spd = 0;
+txtb_img_spd = 4/60;
 
 //the text
 page = 0; 

@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
+    {"name":"Dialogue System","order":16,"path":"folders/Dialogue System.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
@@ -17,7 +18,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Dialogue System","order":16,"path":"folders/Dialogue System.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_modern_room_builder","order":12,"path":"sprites/spr_modern_room_builder/spr_modern_room_builder.yy",},
@@ -32,6 +32,7 @@
     {"name":"textbox_test","order":4,"path":"rooms/textbox_test/textbox_test.yy",},
     {"name":"spr_player_SW","order":4,"path":"sprites/spr_player_SW/spr_player_SW.yy",},
     {"name":"spr_player_NW","order":6,"path":"sprites/spr_player_NW/spr_player_NW.yy",},
+    {"name":"spr_speakblock","order":5,"path":"sprites/spr_speakblock/spr_speakblock.yy",},
     {"name":"spr_menu_button","order":10,"path":"sprites/spr_menu_button/spr_menu_button.yy",},
     {"name":"fnt_dialog","order":3,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
     {"name":"spr_player_E","order":1,"path":"sprites/spr_player_E/spr_player_E.yy",},
@@ -39,6 +40,7 @@
     {"name":"spr_player_S","order":2,"path":"sprites/spr_player_S/spr_player_S.yy",},
     {"name":"obj_warp_to_house_01","order":1,"path":"objects/obj_warp_to_house_01/obj_warp_to_house_01.yy",},
     {"name":"ts_modern_room_objects","order":2,"path":"tilesets/ts_modern_room_objects/ts_modern_room_objects.yy",},
+    {"name":"obj_speakblock","order":6,"path":"objects/obj_speakblock/obj_speakblock.yy",},
     {"name":"spr_player_SE","order":5,"path":"sprites/spr_player_SE/spr_player_SE.yy",},
     {"name":"scr_textbox_functions","order":2,"path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},
     {"name":"spr_wall","order":8,"path":"sprites/spr_wall/spr_wall.yy",},

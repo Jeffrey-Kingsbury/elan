@@ -14,6 +14,13 @@ var v_speed = v_input * move_speed;
 var next_x = x + h_speed;
 var next_y = y + v_speed;
 
+mask_index = sprite[DOWN];
+// Set sprite index based on the face direction
+sprite_index = sprite[face];
+
+
+if(instance_exists(obj_textbox)){exit}
+
 if (!place_meeting(next_x, y, obj_wall)) {
     x = next_x;
 }
@@ -67,7 +74,3 @@ if (h_speed != 0 || v_speed != 0) {
         face = NW; //walk NW
     }
 }
-
-mask_index = sprite[DOWN];
-// Set sprite index based on the face direction
-sprite_index = sprite[face];
