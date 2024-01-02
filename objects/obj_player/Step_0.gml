@@ -18,8 +18,9 @@ mask_index = sprite[DOWN];
 // Set sprite index based on the face direction
 sprite_index = sprite[face];
 
-
+//block controls if a textbox is open
 if(instance_exists(obj_textbox)){exit}
+
 
 if (!place_meeting(next_x, y, obj_wall)) {
     x = next_x;

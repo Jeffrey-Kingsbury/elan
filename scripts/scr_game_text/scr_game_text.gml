@@ -15,7 +15,7 @@ switch(_text_id){
 		scr_text("wha-... huh?");
 		scr_text("Shit. I must have dozed off...");
 		scr_text("beep beep bee- *click*");
-		scr_text("P's gonna be pissed if I'm late. I better get going.");
+		scr_text("P's gonna be pissed if I'm late.\nI better get going.");
 		break;
 		
 		case "bed_01_opt_02":

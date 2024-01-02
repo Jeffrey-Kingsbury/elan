@@ -1,6 +1,6 @@
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + 122;
-accept_key = keyboard_check_pressed(vk_space);
+accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("E"));
 
 //init
 if(!setup) 

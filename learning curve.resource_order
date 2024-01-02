@@ -36,6 +36,7 @@
     {"name":"spr_speakblock","order":5,"path":"sprites/spr_speakblock/spr_speakblock.yy",},
     {"name":"spr_menu_button","order":10,"path":"sprites/spr_menu_button/spr_menu_button.yy",},
     {"name":"fnt_dialog","order":3,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
+    {"name":"Sprite20","order":16,"path":"sprites/Sprite20/Sprite20.yy",},
     {"name":"spr_player_E","order":1,"path":"sprites/spr_player_E/spr_player_E.yy",},
     {"name":"obj_fade","order":4,"path":"objects/obj_fade/obj_fade.yy",},
     {"name":"scr_game_text","order":7,"path":"scripts/scr_game_text/scr_game_text.yy",},
