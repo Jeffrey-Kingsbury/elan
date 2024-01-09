@@ -12,7 +12,7 @@ with(obj_interactable)
 
     if(collision_line(player_x, player_y, end_x, end_y, self, 1, 0))
     {
-        create_textbox(text_id);
+        create_textbox(text_id, true);
     }
 }
 

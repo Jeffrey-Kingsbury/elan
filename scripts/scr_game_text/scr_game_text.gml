@@ -12,12 +12,12 @@ switch(_text_id){
 	break;
 	
 		case "bed_01_opt_01":
-		inst_4FE4CCE3.fader = true;
+		inst_bed_01_fader.fader = true;
 		scr_text("wha-... huh?");
 		scr_text("Shit. I must have dozed off...");
 		scr_text("beep beep bee- *click*");
 		scr_text("P's gonna be pissed if I'm late.\nI better get going.");
-		instance_destroy(inst_5FBCD6EA);
+		instance_destroy(inst_bed_01_dialog_1);
 		break;
 		
 		case "bed_01_opt_02":
@@ -28,4 +28,13 @@ switch(_text_id){
 		break;
 		
 }
+}
+
+function scr_interactable_text(_text_id){
+	switch(_text_id){
+		
+		case "bed_01_01":
+			scr_text("A chest of drawers");
+		break;
+	}
 }

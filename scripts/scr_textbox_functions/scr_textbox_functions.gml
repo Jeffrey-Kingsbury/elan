@@ -18,10 +18,15 @@ function scr_option(_option, _link_id)
 }
 
 /// @param text_id
-function create_textbox(_text_id)
+function create_textbox(_text_id, interactable = false)
 {
 	with(instance_create_depth(0,0,-9999, obj_textbox))
 	{
-		scr_game_text(_text_id);
+		if(interactable){
+				scr_interactable_text(_text_id);
+		}
+		else{
+				scr_game_text(_text_id);
+		}
 	}
 }
