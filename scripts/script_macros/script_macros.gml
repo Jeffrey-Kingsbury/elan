@@ -14,3 +14,5 @@
 #macro IDLE_NE 13
 #macro IDLE_SW 14
 #macro IDLE_SE 15
+
+#macro ITEM_KEY_GOLD "spr_item_key"

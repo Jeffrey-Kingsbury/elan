@@ -56,6 +56,7 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Items","order":20,"path":"folders/Sprites/Items.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"input_cursor_speed_set","order":9,"path":"scripts/input_cursor_speed_set/input_cursor_speed_set.yy",},
@@ -266,6 +267,7 @@
     {"name":"input_verb_group_get_verbs","order":4,"path":"scripts/input_verb_group_get_verbs/input_verb_group_get_verbs.yy",},
     {"name":"input_keyboard_check_released","order":2,"path":"scripts/input_keyboard_check_released/input_keyboard_check_released.yy",},
     {"name":"__input_config_vibration","order":15,"path":"scripts/__input_config_vibration/__input_config_vibration.yy",},
+    {"name":"spr_titlecard_chapter_1","order":19,"path":"sprites/spr_titlecard_chapter_1/spr_titlecard_chapter_1.yy",},
     {"name":"__input_restart_get","order":21,"path":"scripts/__input_restart_get/__input_restart_get.yy",},
     {"name":"input_join_params_get","order":3,"path":"scripts/input_join_params_get/input_join_params_get.yy",},
     {"name":"__input_class_source","order":11,"path":"scripts/__input_class_source/__input_class_source.yy",},
@@ -364,6 +366,7 @@
     {"name":"input_check_double_pressed","order":1,"path":"scripts/input_check_double_pressed/input_check_double_pressed.yy",},
     {"name":"input_cursor_speed_get","order":8,"path":"scripts/input_cursor_speed_get/input_cursor_speed_get.yy",},
     {"name":"input_gamepad_tester_set","order":4,"path":"scripts/input_gamepad_tester_set/input_gamepad_tester_set.yy",},
+    {"name":"rm_forest_1","order":3,"path":"rooms/rm_forest_1/rm_forest_1.yy",},
     {"name":"input_mouse_capture_set","order":1,"path":"scripts/input_mouse_capture_set/input_mouse_capture_set.yy",},
     {"name":"input_check_opposing","order":6,"path":"scripts/input_check_opposing/input_check_opposing.yy",},
     {"name":"input_player_reset","order":3,"path":"scripts/input_player_reset/input_player_reset.yy",},
