@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_global_controls",
+  "name": "scr_inventory",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

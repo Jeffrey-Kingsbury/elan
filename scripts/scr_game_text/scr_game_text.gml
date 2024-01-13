@@ -3,11 +3,12 @@
 function scr_game_text(_text_id){
 
 switch(_text_id){
+	
+	case "inventory_full":
+		scr_text("You can't carry any more items.");
+	break;
 
 	case "bed_01_1":
-	if(array_contains(obj_player.inventory, "Item 0")){
-	scr_text("You have the Item");
-	}
 	scr_text("beep beep beep beep...");
 	scr_text("beep beep beep beep...");
 		scr_option("I'm up!", "bed_01_opt_01")		
