@@ -9,6 +9,8 @@ switch(_text_id){
 	break;
 
 	case "bed_01_1":
+	scr_text("zzz... zzz... zzz...");
+	scr_text("zzz... zzz... zzz...", true);	
 	scr_text("beep beep beep beep...");
 	scr_text("beep beep beep beep...");
 		scr_option("I'm up!", "bed_01_opt_01")		
@@ -16,6 +18,7 @@ switch(_text_id){
 	break;
 	
 		case "bed_01_opt_01":
+		audio_play_sound(snd_click, 1, false);
 		inst_bed_01_fader.fader = true;
 		scr_text("wha-... huh?");
 		scr_text("Shit. I must have dozed off...");

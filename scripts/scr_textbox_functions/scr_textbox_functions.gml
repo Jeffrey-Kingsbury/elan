@@ -1,9 +1,9 @@
 /// @param text(string)
-function scr_text(_text){
-	
+function scr_text(_text, _audio = false){
+
 	text[page_number] = _text;
-	
 	page_number++;
+	audio[page_number] = _audio;	
 
 }
 
