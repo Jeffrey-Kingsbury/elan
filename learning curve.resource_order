@@ -212,6 +212,7 @@
     {"name":"input_trigger_effect_set_strength","order":6,"path":"scripts/input_trigger_effect_set_strength/input_trigger_effect_set_strength.yy",},
     {"name":"spr_player_E","order":1,"path":"sprites/spr_player_E/spr_player_E.yy",},
     {"name":"input_check_quick_pressed","order":10,"path":"scripts/input_check_quick_pressed/input_check_quick_pressed.yy",},
+    {"name":"obj_button_quit","order":2,"path":"objects/obj_button_quit/obj_button_quit.yy",},
     {"name":"input_debug_all_input","order":1,"path":"scripts/input_debug_all_input/input_debug_all_input.yy",},
     {"name":"input_mouse_y","order":12,"path":"scripts/input_mouse_y/input_mouse_y.yy",},
     {"name":"input_profile_copy","order":5,"path":"scripts/input_profile_copy/input_profile_copy.yy",},

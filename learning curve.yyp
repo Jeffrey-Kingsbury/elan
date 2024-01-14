@@ -256,6 +256,7 @@
     {"id":{"name":"input_trigger_effect_set_strength","path":"scripts/input_trigger_effect_set_strength/input_trigger_effect_set_strength.yy",},},
     {"id":{"name":"spr_player_E","path":"sprites/spr_player_E/spr_player_E.yy",},},
     {"id":{"name":"input_check_quick_pressed","path":"scripts/input_check_quick_pressed/input_check_quick_pressed.yy",},},
+    {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
     {"id":{"name":"__input_class_binding","path":"scripts/__input_class_binding/__input_class_binding.yy",},},
     {"id":{"name":"__input_hotswap_tick","path":"scripts/__input_hotswap_tick/__input_hotswap_tick.yy",},},
     {"id":{"name":"input_debug_all_input","path":"scripts/input_debug_all_input/input_debug_all_input.yy",},},
