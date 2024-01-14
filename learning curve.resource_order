@@ -334,6 +334,7 @@
     {"name":"input_binding_gamepad_set","order":1,"path":"scripts/input_binding_gamepad_set/input_binding_gamepad_set.yy",},
     {"name":"__input_gamepad_set_vid_pid","order":7,"path":"scripts/__input_gamepad_set_vid_pid/__input_gamepad_set_vid_pid.yy",},
     {"name":"__input_class_trigger_effect_vibration","order":14,"path":"scripts/__input_class_trigger_effect_vibration/__input_class_trigger_effect_vibration.yy",},
+    {"name":"snd_door_open_close","order":3,"path":"sounds/snd_door_open_close/snd_door_open_close.yy",},
     {"name":"input_player_connected","order":2,"path":"scripts/input_player_connected/input_player_connected.yy",},
     {"name":"input_player_get_gamepad","order":6,"path":"scripts/input_player_get_gamepad/input_player_get_gamepad.yy",},
     {"name":"input_system_verify","order":12,"path":"scripts/input_system_verify/input_system_verify.yy",},

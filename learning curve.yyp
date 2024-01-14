@@ -393,6 +393,7 @@
     {"id":{"name":"input_binding_gamepad_set","path":"scripts/input_binding_gamepad_set/input_binding_gamepad_set.yy",},},
     {"id":{"name":"__input_gamepad_set_vid_pid","path":"scripts/__input_gamepad_set_vid_pid/__input_gamepad_set_vid_pid.yy",},},
     {"id":{"name":"__input_class_trigger_effect_vibration","path":"scripts/__input_class_trigger_effect_vibration/__input_class_trigger_effect_vibration.yy",},},
+    {"id":{"name":"snd_door_open_close","path":"sounds/snd_door_open_close/snd_door_open_close.yy",},},
     {"id":{"name":"input_player_connected","path":"scripts/input_player_connected/input_player_connected.yy",},},
     {"id":{"name":"input_player_get_gamepad","path":"scripts/input_player_get_gamepad/input_player_get_gamepad.yy",},},
     {"id":{"name":"input_system_verify","path":"scripts/input_system_verify/input_system_verify.yy",},},

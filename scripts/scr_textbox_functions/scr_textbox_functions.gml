@@ -1,10 +1,10 @@
 /// @param text(string)
-function scr_text(_text, _audio = false){
+function scr_text(_text, _audio = false, _audio_props = {sound: asset_sound, priority: 1, loop: false, gain: 1}){
 
 	text[page_number] = _text;
 	page_number++;
 	audio[page_number] = _audio;	
-
+	audio_props[page_number] = _audio_props;
 }
 
 /// @param option

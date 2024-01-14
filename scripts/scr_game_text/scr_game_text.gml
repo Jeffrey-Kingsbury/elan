@@ -10,7 +10,7 @@ switch(_text_id){
 
 	case "bed_01_1":
 	scr_text("zzz... zzz... zzz...");
-	scr_text("zzz... zzz... zzz...", true);	
+	scr_text("zzz... zzz... zzz...", true, {sound: snd_alarm_clock, loop: false, gain: 1});	
 	scr_text("beep beep beep beep...");
 	scr_text("beep beep beep beep...");
 		scr_option("I'm up!", "bed_01_opt_01")		
@@ -18,14 +18,14 @@ switch(_text_id){
 	break;
 	
 		case "bed_01_opt_01":
-	audio_stop_sound(snd_alarm_clock)
-	audio_play_sound(snd_click, 1, false);
-		inst_bed_01_fader.fader = true;
+			audio_stop_sound(snd_alarm_clock)
+			audio_play_sound(snd_click, 1, false);
+			inst_bed_01_fader.fader = true;
+		scr_text("*click*");
 		scr_text("wha-... huh?");
 		scr_text("Shit. I must have dozed off...");
-		scr_text("beep beep bee- *click*");
 		scr_text("P's gonna be pissed if I'm late.\nI better get going.");
-		instance_destroy(inst_bed_01_dialog_1);
+			instance_destroy(inst_bed_01_dialog_1);
 		break;
 		
 		case "bed_01_opt_02":
@@ -43,6 +43,10 @@ function scr_interactable_text(_text_id){
 		
 		case "bed_01_01":
 			scr_text("A chest of drawers");
+		break;
+		
+		case "bed_01_need_key":
+			scr_text("I should grab my car keys before heading out.");
 		break;
 	}
 }

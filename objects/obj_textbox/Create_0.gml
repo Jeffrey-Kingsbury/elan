@@ -28,5 +28,4 @@ option_number = 0;
 setup = false;
 
 audio = [];
-
-show_debug_message(page)
+audio_props = [];

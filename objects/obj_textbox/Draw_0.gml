@@ -22,10 +22,10 @@ if(!setup)
 			text_x_offset[p] = 44;
 	}
 }
-show_debug_message(audio)
 
-if(audio[page] && !audio_is_playing(snd_alarm_clock)){
-audio_play_sound(snd_alarm_clock, 1, true)
+
+if(audio[page] && !audio_is_playing(audio_props[page].sound)){
+	audio_play_sound(audio_props[page].sound, audio_props[page].sound, audio_props[page].loop, audio_props[page].gain);
 }
 
 
