@@ -1,0 +1,1 @@
+audio_stop_sound(snd_intro_credit_menu)

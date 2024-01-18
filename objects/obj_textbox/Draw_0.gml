@@ -32,6 +32,7 @@ if(audio[page] && !audio_is_playing(audio_props[page].sound)){
 //typing the text out
 if(draw_char < text_length[page])
 {
+	audio_play_sound(snd_text_typing_beep,2,false,0.1,0,random(1));
 	draw_char += text_spd;
 	draw_char = clamp(draw_char, 0, text_length[page]);
 }
