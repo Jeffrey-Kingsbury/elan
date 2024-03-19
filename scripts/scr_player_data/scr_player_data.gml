@@ -1,0 +1,1 @@
+global.visited_rooms = [];

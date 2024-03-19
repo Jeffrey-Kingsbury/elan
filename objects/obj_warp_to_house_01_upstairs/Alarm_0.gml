@@ -1,0 +1,1 @@
+room_goto(rm_house_01_upstairs);

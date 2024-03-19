@@ -6,6 +6,8 @@ accept_key = input_check_pressed("accept") || input_check_pressed("interact");
 if(!setup) 
 {
 	setup = true;
+	draw_set_color(c_white);
+	draw_set_alpha(1);
 	draw_set_font(fnt_dialog);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
