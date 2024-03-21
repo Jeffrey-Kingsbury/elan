@@ -7,6 +7,14 @@ switch(_text_id){
 	case "inventory_full":
 		scr_text("You can't carry any more items.");
 	break;
+	
+	case "bed_01_brother":
+		scr_text("goo goo ga ga, bitch.");
+	break;
+	
+	case "bed_01_dad":
+		scr_text("Ask your mother.");
+	break;
 
 	case "bed_01_1":
 	inst_house_01_player.block_input = false;
