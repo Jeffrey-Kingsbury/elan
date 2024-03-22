@@ -79,7 +79,6 @@ txtb_spr_h = sprite_get_height(txtb_spr);
 
 //back of textbox
 draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width / txtb_spr_w, textbox_height / txtb_spr_h, 0, c_white, .8);
-
 //Options
 if(draw_char == text_length[page] && page == page_number - 1)
 {

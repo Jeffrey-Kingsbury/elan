@@ -65,5 +65,3 @@ if (!talking) {
         }
     }
 }
-
-show_debug_message(path_)

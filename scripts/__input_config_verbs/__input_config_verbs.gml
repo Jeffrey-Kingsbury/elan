@@ -22,6 +22,7 @@ function __input_config_verbs()
             
             accept:  input_binding_key(vk_space),
 			interact: input_binding_key(ord("E")),
+			back: input_binding_key(ord("backspace")),
             pause: input_binding_key(vk_escape),
         },
         
@@ -32,8 +33,9 @@ function __input_config_verbs()
             left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
             right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
             
-            accept:  input_binding_gamepad_button(gp_face1),
-            interact:  input_binding_gamepad_button(gp_face3),
+            accept:  input_binding_gamepad_button(gp_face3),
+            interact:  input_binding_gamepad_button(gp_face1),
+			back: input_binding_gamepad_button((gp_face2)),
             pause: input_binding_gamepad_button(gp_start),
         },
 

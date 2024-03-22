@@ -26,6 +26,7 @@ input_icon_touch("Virtual button");
 //This is useful for turning keyboard keys into sprite icons to match other assets, or for returning formatted strings (e.g. for use with Scribble)
 //Any keyboard key label not in this struct will simply fall through and return the key name
 input_icons_keyboard_and_mouse()
+.add("E", spr_controls_KB_E);
 //Put extra .add() commands here to add icons to keyboard and mouse
 
 
@@ -34,8 +35,8 @@ input_icons_keyboard_and_mouse()
 
 //Xbox One and Series S|X controllers
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_ONE)
-.add("gamepad face south",         "A")
-.add("gamepad face east",          "B")
+.add("gamepad face south",        spr_controls_XB_A)
+.add("gamepad face east",          spr_controls_XB_B)
 .add("gamepad face west",          "X")
 .add("gamepad face north",         "Y")
 .add("gamepad shoulder l",         "LB")

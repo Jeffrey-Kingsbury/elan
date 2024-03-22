@@ -59,5 +59,3 @@ if (abs_h_speed > 0 || abs_v_speed > 0) {
         case DOWN: face = IDLE_DOWN; direction = 270; break;
     }
 }
-
-

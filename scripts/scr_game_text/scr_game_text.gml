@@ -67,6 +67,11 @@ function scr_interactable_text(_text_id){
 			scr_text("A chest of drawers");
 		break;
 		
+		case "house_01_downstairs_tv":
+			scr_text("The body of seventeen year old Dawn Marie Birnbaum was discovered late last night in a snowbank off Interstate 80. Investigators say the victim was raped before being strangled to death.");		
+			scr_text("Stay tuned for more updates as this case unfolds.");
+		break;
+			
 		case "bed_01_need_key":
 			scr_text("I should grab my car keys before heading out.");
 		break;
