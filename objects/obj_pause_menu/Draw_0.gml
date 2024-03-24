@@ -8,5 +8,11 @@ draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 
 for(var _i = 0; _i < op_length; _i++){
-	draw_text(x + op_border, y + op_border + op_space * _i, option[_i]);	
+	var _c = c_white;
+	
+	if(pos == _i) {
+		_c = c_yellow;
+	}
+	
+	draw_text_color(x + op_border, y + op_border + op_space * _i, option[_i], _c,_c,_c,_c,1);	
 }

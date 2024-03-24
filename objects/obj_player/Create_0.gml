@@ -1,6 +1,9 @@
 xspeed = 0;
 yspeed = 0;
-move_speed = 2;
+move_speed = 1;
+last_direction = 0
+h_input = 0;
+v_input = 0;
 
 sprite[RIGHT] = spr_player_walk_right;
 sprite[UP] = spr_player_walk_up;

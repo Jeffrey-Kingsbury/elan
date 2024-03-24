@@ -3,9 +3,31 @@ var left_key = input_check("left");
 var up_key = input_check("up");
 var down_key = input_check("down");
 
-// Determine movement speeds
-var h_input = right_key - left_key;
-var v_input = down_key - up_key;
+
+v_input = down_key - up_key;
+
+// Update last_direction based on current input
+if (right_key != 0 && left_key == 0) {
+    last_direction = 1; // Right key pressed
+} else if (left_key != 0 && right_key == 0) {
+    last_direction = -1; // Left key pressed
+} else if(right_key == 0 && left_key == 0) {
+	last_direction = 0; // Neither pressed
+}
+
+h_input = last_direction;
+
+// Check if both left and right keys are pressed
+// Change the direction to the opposite of the last key pressed instead of 0.
+if (right_key && left_key) {
+	if(last_direction == -1){
+		h_input = 1;
+	} else if(last_direction = 1){
+		h_input = -1;
+	}
+} 
+
+
 
 var h_speed = h_input * move_speed;
 var v_speed = v_input * move_speed;

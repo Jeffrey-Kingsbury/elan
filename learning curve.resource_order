@@ -159,6 +159,7 @@
     {"name":"rm_house_01_downstairs","order":1,"path":"rooms/rm_house_01_downstairs/rm_house_01_downstairs.yy",},
     {"name":"rm_intro","order":5,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"rm_menu_testing","order":8,"path":"rooms/rm_menu_testing/rm_menu_testing.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
