@@ -11,7 +11,12 @@ if(_up_key != 0 || _down_key != 0){
 }
 
 if(_interact_key != 0){
-	audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
+	
+	if(option[menu_level][pos] == "Back" || option[menu_level][pos] == "No"){
+		audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
+	}else{
+		audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
+	}
 }
 
 if(_back_key != 0){
