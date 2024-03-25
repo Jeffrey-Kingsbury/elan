@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pause_menu",
+  "%Name":"obj_black_screen",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pause_menu",
+  "name":"obj_black_screen",
   "overriddenProperties":[],
   "parent":{
     "name":"menu",
@@ -32,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialog_box",
-    "path":"sprites/spr_dialog_box/spr_dialog_box.yy",
+    "name":"spr_black_solid",
+    "path":"sprites/spr_black_solid/spr_black_solid.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

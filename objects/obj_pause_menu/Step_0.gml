@@ -3,8 +3,32 @@ _down_key = input_check_pressed("down");
 _interact_key = input_check_pressed("interact");
 _back_key = input_check_pressed("pause");
 
+
 op_length = array_length(option[menu_level])
 pos += _down_key - _up_key;
+
+if(_back_key != 0){
+	if(game_pause){
+			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
+			game_pause = false;
+			instance_activate_all();
+	} else {
+			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
+			game_pause = true;
+			pos = 0;
+			menu_level = 0;
+			instance_deactivate_all(true);
+			instance_activate_object(input_controller_object)			
+			//instance_activate_object(obj_black_screen);
+			//obj_black_screen.visible = true;
+	}
+}
+
+if(!game_pause){
+	//obj_black_screen.visible = false;
+	display_set_gui_maximise();
+	exit
+	};
 
 if(_up_key != 0 || _down_key != 0){
 	audio_play_sound(snd_menu_opt_switch_chime, 1, false, 0.5, 0, 1);	
@@ -17,10 +41,6 @@ if(_interact_key != 0){
 	}else{
 		audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
 	}
-}
-
-if(_back_key != 0){
-	audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
 }
 
 if(pos >= op_length){
@@ -37,7 +57,9 @@ switch(menu_level){
 	case 0:
 		switch(pos){
 		case 0:
-			// Close the pause menu
+			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
+			game_pause = false;
+			instance_activate_all();
 		break;
 	
 		case 1:

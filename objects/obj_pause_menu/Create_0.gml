@@ -3,7 +3,7 @@ height = 104;
 
 op_border = 8; // padding
 op_space = 16; // gap
-
+game_pause = false;
 pos = 0;
 
 // pause menu
