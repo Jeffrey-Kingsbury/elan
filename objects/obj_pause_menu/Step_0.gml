@@ -8,6 +8,7 @@ op_length = array_length(option[menu_level])
 pos += _down_key - _up_key;
 
 if(_back_key != 0){
+	if(!menu_active) { exit };
 	if(game_pause){
 			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
 			game_pause = false;
@@ -19,13 +20,10 @@ if(_back_key != 0){
 			menu_level = 0;
 			instance_deactivate_all(true);
 			instance_activate_object(input_controller_object)			
-			//instance_activate_object(obj_black_screen);
-			//obj_black_screen.visible = true;
 	}
 }
 
 if(!game_pause){
-	//obj_black_screen.visible = false;
 	display_set_gui_maximise();
 	exit
 	};

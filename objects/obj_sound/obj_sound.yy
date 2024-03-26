@@ -29,6 +29,8 @@
     {"$GMObjectProperty":"","%Name":"sound_asset","filters":[],"listItems":[],"multiselect":false,"name":"sound_asset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
     {"$GMObjectProperty":"","%Name":"sound_fade","filters":[],"listItems":[],"multiselect":false,"name":"sound_fade","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"","%Name":"sound_fade_time","filters":[],"listItems":[],"multiselect":false,"name":"sound_fade_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5000","varType":0,},
+    {"$GMObjectProperty":"","%Name":"gain","filters":[],"listItems":[],"multiselect":false,"name":"gain","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"","%Name":"loop","filters":[],"listItems":[],"multiselect":false,"name":"loop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

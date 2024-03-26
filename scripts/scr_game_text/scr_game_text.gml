@@ -28,6 +28,7 @@ switch(_text_id){
 			audio_stop_sound(snd_alarm_clock)
 			audio_play_sound(snd_click, 1, false);
 			inst_house_01_fader.fader = true;
+			inst_upstairs_activate_menu._init = true;
 		scr_text("*click*");
 		scr_text("Shit. I must have dozed off...");
 		scr_text("I better get going.");
