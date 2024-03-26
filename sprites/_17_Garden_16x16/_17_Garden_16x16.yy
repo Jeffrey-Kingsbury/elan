@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"modern_ext",
-    "path":"folders/Sprites/tilesets/modern_ext.yy",
+    "path":"folders/Tile Sets/modern_ext.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

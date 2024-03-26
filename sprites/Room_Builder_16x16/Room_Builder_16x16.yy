@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"modern_int",
-    "path":"folders/Sprites/tilesets/modern_int.yy",
+    "path":"folders/Tile Sets/modern_int.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

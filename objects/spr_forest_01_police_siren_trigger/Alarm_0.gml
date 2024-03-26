@@ -1,0 +1,1 @@
+audio_sound_gain(_sound, 0, 4000);

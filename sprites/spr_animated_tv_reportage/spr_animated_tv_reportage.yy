@@ -49,7 +49,7 @@
   "origin":0,
   "parent":{
     "name":"animated",
-    "path":"folders/Sprites/tilesets/modern_int/animated.yy",
+    "path":"folders/Tile Sets/modern_int/animated.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_taxi_animated",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_police_up_animated",
+  "eventList":[],
   "managed":true,
-  "name":"obj_taxi_animated",
+  "name":"obj_police_up_animated",
   "overriddenProperties":[],
   "parent":{
-    "name":"cars",
-    "path":"folders/Objects/cars.yy",
+    "name":"police",
+    "path":"folders/Objects/cars/police.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_taxi_animated",
-    "path":"sprites/spr_taxi_animated/spr_taxi_animated.yy",
+    "name":"spr_police_up_animated",
+    "path":"sprites/spr_police_up_animated/spr_police_up_animated.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"modern_int",
-    "path":"folders/Sprites/tilesets/modern_int.yy",
+    "path":"folders/Tile Sets/modern_int.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

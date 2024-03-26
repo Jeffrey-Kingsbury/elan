@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"bought and paid for",
-    "path":"folders/Rooms/bought and paid for.yy",
+    "name":"modern_ext",
+    "path":"folders/Tile Sets/modern_ext.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"learning curve",
-    "path":"learning curve.yyp",
+    "name":"misc",
+    "path":"folders/Sprites/misc.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

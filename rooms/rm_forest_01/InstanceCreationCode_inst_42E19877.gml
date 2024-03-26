@@ -1,0 +1,1 @@
+move_towards_point(257, 0, 4)

@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"modern_ext",
-    "path":"folders/Sprites/tilesets/modern_ext.yy",
+    "path":"folders/Tile Sets/modern_ext.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
