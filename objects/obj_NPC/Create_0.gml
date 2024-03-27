@@ -1,16 +1,3 @@
-if(!pathing && !does_not_move){
-	//random movement
-	alarm[0] = random(120);
-};
-
-if(pathing){
-//pathing logic here	
-}
-
-spd = 0;
-ran_x = 0;
-ran_y = 0;
-
 sprite[RIGHT] = sprite_right;
 sprite[UP] = sprite_up;
 sprite[LEFT] = sprite_left;

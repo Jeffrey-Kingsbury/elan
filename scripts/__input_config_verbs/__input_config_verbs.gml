@@ -19,6 +19,7 @@ function __input_config_verbs()
             down:  [input_binding_key(vk_down),  input_binding_key("S")],
             left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
+			run: input_binding_key(vk_shift),
             
             accept:  input_binding_key(vk_space),
 			interact: input_binding_key(ord("E")),
@@ -32,7 +33,8 @@ function __input_config_verbs()
             down:  [input_binding_gamepad_axis(gp_axislv, false), input_binding_gamepad_button(gp_padd)],
             left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
             right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
-            
+            run: input_binding_gamepad_button(gp_shoulderlb),
+			
             accept:  input_binding_gamepad_button(gp_face3),
             interact:  input_binding_gamepad_button(gp_face1),
 			back: input_binding_gamepad_button((gp_face2)),

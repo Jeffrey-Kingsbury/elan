@@ -13,6 +13,8 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"propertyId":{"name":"sprite_idle_up","path":"objects/obj_NPC/obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_dad_idle_up",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"propertyId":{"name":"sprite_idle_down","path":"objects/obj_NPC/obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_dad_idle_down",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"propertyId":{"name":"sprite_idle_right","path":"objects/obj_NPC/obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_dad_idle_right",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"propertyId":{"name":"does_not_move","path":"objects/obj_NPC/obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"propertyId":{"name":"reset_face","path":"objects/obj_NPC/obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"characters",

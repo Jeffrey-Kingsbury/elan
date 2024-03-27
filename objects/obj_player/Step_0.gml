@@ -1,17 +1,21 @@
-var right_key = input_check("right");
-var left_key = input_check("left");
-var up_key = input_check("up");
-var down_key = input_check("down");
+var _right_key = input_check("right");
+var _left_key = input_check("left");
+var _up_key  = input_check("up");
+var _down_key  = input_check("down");
+v_input = _down_key  - _up_key ;
 
-
-v_input = down_key - up_key;
+if(input_check("run")){
+move_speed = 1.75;	
+} else {
+move_speed = 1;	
+}
 
 // Update last_direction based on current input
-if (right_key != 0 && left_key == 0) {
+if (_right_key != 0 && _left_key == 0) {
     last_direction = 1; // Right key pressed
-} else if (left_key != 0 && right_key == 0) {
+} else if (_left_key != 0 && _right_key == 0) {
     last_direction = -1; // Left key pressed
-} else if(right_key == 0 && left_key == 0) {
+} else if(_right_key == 0 && _left_key == 0) {
 	last_direction = 0; // Neither pressed
 }
 
@@ -19,22 +23,13 @@ h_input = last_direction;
 
 // Check if both left and right keys are pressed
 // Change the direction to the opposite of the last key pressed instead of 0.
-if (right_key && left_key) {
+if (_right_key && _left_key) {
 	if(last_direction == -1){
 		h_input = 1;
 	} else if(last_direction = 1){
 		h_input = -1;
 	}
 } 
-
-
-
-var h_speed = h_input * move_speed;
-var v_speed = v_input * move_speed;
-
-// Collision handling
-var next_x = x + h_speed;
-var next_y = y + v_speed;
 
 mask_index = sprite[DOWN];
 // Set sprite index based on the face direction
@@ -44,31 +39,35 @@ sprite_index = sprite[face];
 if(instance_exists(obj_textbox)){exit}
 if(block_input){exit}
 
+var _h_speed = h_input * move_speed;
+var _v_speed = v_input * move_speed;
 
-
-if (!place_meeting(next_x, y, obj_wall)) {
-    x = next_x;
+// Collision handling
+var _next_x = x + _h_speed;
+var _next_y = y + _v_speed;
+if (!place_meeting(_next_x, y, obj_wall)) {
+    x = _next_x;
 }
 
-if (!place_meeting(x, next_y, obj_wall)) {
-    y = next_y;
+if (!place_meeting(x, _next_y, obj_wall)) {
+    y = _next_y;
 }
 
 // Set sprite direction based on movement
-var abs_h_speed = abs(h_speed);
-var abs_v_speed = abs(v_speed);
+var _abs__h_speed = abs(_h_speed);
+var _abs__v_speed = abs(_v_speed);
 
-if (abs_h_speed > 0 || abs_v_speed > 0) {
-    if (abs_h_speed > abs_v_speed) {
-        if (h_speed > 0) {
+if (_abs__h_speed > 0 || _abs__v_speed > 0) {
+    if (_abs__h_speed > _abs__v_speed) {
+        if (_h_speed > 0) {
             face = RIGHT;
-        } else if (h_speed < 0) {
+        } else if (_h_speed < 0) {
             face = LEFT;
         }
     } else {
-        if (v_speed > 0) {
+        if (_v_speed > 0) {
             face = DOWN;
-        } else if (v_speed < 0) {
+        } else if (_v_speed < 0) {
             face = UP;
         }
     }
