@@ -20,6 +20,7 @@ if(menu_level = 2){
 }
 
 
+
 // Draw options
 draw_set_font(fnt_dialog);
 draw_set_valign(fa_top);
@@ -28,10 +29,22 @@ draw_set_halign(fa_left);
 
 for(var _i = 0; _i < op_length; _i++){
 	var _c = c_white;
+	var _c_d = c_gray
 	
 	if(pos == _i) {
 		_c = c_yellow;
+		_c_d = c_yellow;
 	}
 	
-	draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c,_c,_c,_c,1);	
+	if(menu_level == 0){
+		if(_i == 3){
+			if(file_exists("save.json")){
+					draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c,_c,_c,_c,1);	
+			} else {
+					draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c_d,_c_d,_c_d,_c_d,1);	
+			}
+		} else {
+				draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c,_c,_c,_c,1);	
+		}
+	}
 }

@@ -1,10 +1,11 @@
 depth = -999;
  _text_audio_count = 0;
+ _scale = 4;
  
 textbox_width = 280;
 textbox_height = 80;
 border = 4;
-line_sep = 12;
+line_sep = 8;
 line_width = textbox_width - border * 2;
 txtb_spr = spr_dialog_box;
 txtb_img = 0;

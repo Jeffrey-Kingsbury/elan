@@ -34,7 +34,7 @@ if(_up_key != 0 || _down_key != 0){
 
 if(_interact_key != 0){
 	
-	if(option[menu_level][pos] == "Back" || option[menu_level][pos] == "No"){
+	if(option[menu_level][pos] == "Back" || option[menu_level][pos] == "No" ){
 		audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
 	}else{
 		audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
@@ -71,10 +71,14 @@ switch(menu_level){
 		
 		case 3:
 			// Load
-			load_game()
-			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
-			game_pause = false;
-			instance_activate_all();
+			if(!file_exists("save.json")){
+				audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.1);
+			} else {
+				load_game()
+				audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
+				game_pause = false;
+				instance_activate_all();
+			}
 		break;
 		
 		case 4:

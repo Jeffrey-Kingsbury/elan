@@ -32,6 +32,7 @@
     {"$GMObjectProperty":"","%Name":"text_id","filters":[],"listItems":[],"multiselect":false,"name":"text_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
     {"$GMObjectProperty":"","%Name":"remove_after_reading","filters":[],"listItems":[],"multiselect":false,"name":"remove_after_reading","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"_is_news","filters":[],"listItems":[],"multiselect":false,"name":"_is_news","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"_scale","filters":[],"listItems":[],"multiselect":false,"name":"_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
