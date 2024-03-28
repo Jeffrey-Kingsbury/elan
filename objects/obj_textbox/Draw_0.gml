@@ -30,13 +30,16 @@ if(audio[page] && !audio_is_playing(audio_props[page].sound)){
 	audio_play_sound(audio_props[page].sound, audio_props[page].sound, audio_props[page].loop, audio_props[page].gain);
 }
 
-
 //typing the text out
 if(draw_char < text_length[page])
 {
-	audio_play_sound(snd_text_typing_beep,2,false,0.1,0,random(1));
+	audio_play_sound(snd_text_typing_beep,1, false,random(0.2),0,random(2));	
 	draw_char += text_spd;
 	draw_char = clamp(draw_char, 0, text_length[page]);
+}
+
+if(draw_char == text_length[page]){
+audio_stop_sound(snd_text_typing_beep)	
 }
 
 //control to flip through pages

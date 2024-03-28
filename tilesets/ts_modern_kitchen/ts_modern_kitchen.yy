@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Dialogue System",
-    "path":"folders/Dialogue System.yy",
+    "name":"_Dialogue System",
+    "path":"folders/_Dialogue System.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

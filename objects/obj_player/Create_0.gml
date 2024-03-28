@@ -16,3 +16,5 @@ sprite[IDLE_LEFT] = spr_player_idle_left;
 sprite[IDLE_DOWN] = spr_player_idle_down;
 
 face = IDLE_DOWN;
+
+global._player_room = room;

@@ -10,6 +10,9 @@ move_speed = 1.75;
 move_speed = 1;	
 }
 
+global._player_x = x;
+global._player_y = y;
+
 // Update last_direction based on current input
 if (_right_key != 0 && _left_key == 0) {
     last_direction = 1; // Right key pressed

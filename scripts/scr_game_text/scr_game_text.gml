@@ -43,19 +43,19 @@ switch(_text_id){
 		break;
 		
 		
-		case "chaper_1_01":
+		case "bought_and_paid_for_taxi_0":
 		scr_text("Sure is some weather we're having lately...");
 		scr_text("Feels like it hasn't stopped raining in weeks.");
-			scr_option("Remain silent", "chapter_1_01_00");
-			scr_option("Yeah..", "chapter_1_01_01");
+			scr_option("Remain silent", "bought_and_paid_for_taxi_01");
+			scr_option("Yeah..", "bought_and_paid_for_taxi_02");
 		break;
 		
-		case "chapter_1_01_00":
+		case "bought_and_paid_for_taxi_01":
 			scr_text("Not very talkative are you...");
 			scr_text("That's alright...");
 			break;
 			
-		case "chapter_1_01_01":
+		case "bought_and_paid_for_taxi_02":
 			scr_text("Mind if I ask what brings you to this part of town so late?");
 			break;
 }
@@ -68,10 +68,42 @@ function scr_interactable_text(_text_id){
 			scr_text("A chest of drawers");
 		break;
 		
-		case "house_01_downstairs_tv":
+		
+		
+		case "house_01_downstairs_tv_01":
 			scr_text("The body of seventeen year old Dawn Marie Birnbaum was discovered late last night in a snowbank off Interstate 80. Investigators say the victim was raped before being strangled to death.");		
 			scr_text("Stay tuned for more updates as this case unfolds.");
 		break;
+		
+		case "house_01_downstairs_tv_02":
+			scr_text("The body of seventeen year old Lorene Larhette was discovered after she had frozen to death along Joyce Howden.");		
+			scr_text("Lorene was a student at Northwest Outward Bound School for troubled teens.");
+			scr_text("Stay tuned for more updates as this case unfolds.");
+		break;
+		
+		case "house_01_downstairs_tv_03":
+			scr_text("Police are investigating a wrongful death case at Forest Haven Asylum this evening.");		
+			scr_text("Witnesses say that seventeen year old Joy Evans choked to death after they were force fed while lying down.");
+			scr_text("Stay tuned for more updates as this case unfolds.");
+		break;
+		
+		case "house_01_downstairs_tv_04":
+			scr_text("Tragedy tonight as firefighters work to put out the blaze that left two students dead at Grove School.");		
+			scr_text("We are getting confirmation that the victims names were Jonathan S. Lenoff and Peter Cooper.");
+			scr_text("Stay tuned for more updates as this case unfolds.");
+		break;
+		
+		case "house_01_downstairs_tv_05":
+			scr_text("Fourteen year old Connie Munson was found dead in an apparent escape attempt from the Bethesda home for girls.");		
+			scr_text("Investigators agree that she was extremely troubled. Our thoughts and prayers to the family of Connie.");
+			scr_text("Next up, Sports.");
+		break;
+
+
+
+
+
+
 			
 		case "bed_01_need_key":
 			scr_text("I should grab my car keys before heading out.");

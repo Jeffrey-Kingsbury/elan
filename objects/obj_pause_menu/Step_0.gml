@@ -65,10 +65,19 @@ switch(menu_level){
 		break;
 	
 		case 2:
-			// Save
+		// Save
+			save_game()
 		break;
 		
 		case 3:
+			// Load
+			load_game()
+			audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
+			game_pause = false;
+			instance_activate_all();
+		break;
+		
+		case 4:
 			// Exit
 			menu_level = 2;
 		break;

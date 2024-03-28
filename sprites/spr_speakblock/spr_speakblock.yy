@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Dialogue System",
-    "path":"folders/Dialogue System.yy",
+    "name":"_Dialogue System",
+    "path":"folders/_Dialogue System.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

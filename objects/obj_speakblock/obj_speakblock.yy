@@ -10,8 +10,8 @@
   "name":"obj_speakblock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogue System",
-    "path":"folders/Dialogue System.yy",
+    "name":"_Dialogue System",
+    "path":"folders/_Dialogue System.yy",
   },
   "parentObjectId":null,
   "persistent":false,

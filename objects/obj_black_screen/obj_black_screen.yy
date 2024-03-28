@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"menu",
-    "path":"folders/Objects/menu.yy",
+    "path":"folders/_MENU/menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,5 +34,5 @@
     "path":"sprites/spr_black_solid/spr_black_solid.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

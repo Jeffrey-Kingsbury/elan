@@ -10,7 +10,9 @@ pos = 0;
 option[0, 0] = "Resume";
 option[0, 1] = "Settings";
 option[0, 2] = "Save";
-option[0, 3] = "Quit";
+option[0, 3] = "Load";
+option[0, 4] = "Quit";
+
 
 // Settings menu
 option[1, 0] = "Resolution";

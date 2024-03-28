@@ -1,0 +1,1 @@
+create_textbox("bought_and_paid_for_taxi_0");

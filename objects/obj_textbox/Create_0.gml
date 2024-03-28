@@ -1,5 +1,6 @@
 depth = -999;
-
+ _text_audio_count = 0;
+ 
 textbox_width = 280;
 textbox_height = 80;
 border = 4;

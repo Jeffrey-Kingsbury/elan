@@ -1,1 +1,0 @@
-text_id = "house_01_get_key";

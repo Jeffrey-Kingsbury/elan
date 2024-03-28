@@ -1,1 +1,1 @@
-face = UP;
+face = IDLE_UP;

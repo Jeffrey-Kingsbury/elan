@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"learning curve",
-    "path":"learning curve.yyp",
+    "name":"modern_ext",
+    "path":"folders/Tile Sets/modern_ext.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
