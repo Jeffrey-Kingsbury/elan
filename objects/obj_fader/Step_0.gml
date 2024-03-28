@@ -4,6 +4,9 @@ if(fader) {
 		image_alpha -= fade_speed;	
 		} else {
 			fader = false
+			if(destroy){
+			instance_destroy();
+			}
 		}
 	}else{
 		if(image_alpha < 1){

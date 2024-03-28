@@ -13,7 +13,9 @@ switch(_text_id){
 	break;
 	
 	case "bed_01_dad":
-		scr_text("Ask your mother.");
+		scr_text("You're going to hang out with P?");
+		scr_text("Alright, well. It's really coming down out there...");
+		scr_text("Better bring your galoshes.");
 	break;
 
 	case "bed_01_1":

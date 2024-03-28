@@ -1,14 +1,15 @@
 {
   "$GMRoom":"",
-  "%Name":"intro_credit",
+  "%Name":"rm_start_screen",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_70D79FA4","path":"rooms/intro_credit/intro_credit.yy",},
-    {"name":"inst_591D6B5F","path":"rooms/intro_credit/intro_credit.yy",},
-    {"name":"inst_B3459B8","path":"rooms/intro_credit/intro_credit.yy",},
+    {"name":"inst_70D79FA4","path":"rooms/rm_start_screen/rm_start_screen.yy",},
+    {"name":"inst_591D6B5F","path":"rooms/rm_start_screen/rm_start_screen.yy",},
+    {"name":"inst_B3459B8","path":"rooms/rm_start_screen/rm_start_screen.yy",},
+    {"name":"inst_2DFEADAD","path":"rooms/rm_start_screen/rm_start_screen.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,13 +20,14 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_sound","path":"objects/obj_sound/obj_sound.yy",},"propertyId":{"name":"sound_fade","path":"objects/obj_sound/obj_sound.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_sound","path":"objects/obj_sound/obj_sound.yy",},"propertyId":{"name":"sound_fade_time","path":"objects/obj_sound/obj_sound.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3000",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":11.0,"x":-512.0,"y":-128.0,},
+        {"$GMRInstance":"","%Name":"inst_2DFEADAD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DFEADAD","objectId":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-448.0,"y":96.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_B3459B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B3459B8","objectId":{"name":"obj_ad_logo","path":"objects/obj_ad_logo/obj_ad_logo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.591773,"scaleY":2.591773,"x":216.48087,"y":324.38922,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"intro_credit",
+  "name":"rm_start_screen",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",

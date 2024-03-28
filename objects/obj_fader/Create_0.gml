@@ -3,6 +3,3 @@ image_yscale *= 4000;
 depth = -1;
 
 image_alpha = start_alpha;
-
-
-gpu_set_texfilter(false);
