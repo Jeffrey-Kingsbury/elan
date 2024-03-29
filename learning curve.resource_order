@@ -69,6 +69,7 @@
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"bought and paid for","order":10,"path":"folders/Rooms/bought and paid for.yy",},
+    {"name":"testing rooms","order":11,"path":"folders/Rooms/testing rooms.yy",},
     {"name":"house_01","order":7,"path":"folders/Rooms/house_01.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
