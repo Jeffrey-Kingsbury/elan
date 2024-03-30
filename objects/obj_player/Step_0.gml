@@ -13,29 +13,26 @@ move_speed = 1;
 
 // ATTACKING
 if(input_check("interact") && !_attacking && !instance_exists(obj_attack_collider)){
+	_attacking = true;
 	//up
-	if(face == UP || face == IDLE_UP){
+	if(face == IDLE_UP){
 		instance_create_depth(x, y - 12, 1, obj_attack_collider)	
-		face = ATTACK_UP;	
-		_attacking = true;
+		face = ATTACK_UP;
 	}
 	//down
-	if(face == DOWN|| face == IDLE_DOWN){
+	if(face == IDLE_DOWN){
 		instance_create_depth(x, y + 12, 1, obj_attack_collider)
 		face = ATTACK_DOWN;	
-		_attacking = true;
 	}
 	//left
-	if(face == LEFT || face == IDLE_LEFT){
-		instance_create_depth(x - 12, y, 1, obj_attack_collider)	
-		face = ATTACK_LEFT;	
-		_attacking = true;
+	if(face == IDLE_LEFT){
+		instance_create_depth(x - 12, y, 1, obj_attack_collider)
+		face = ATTACK_LEFT	
 	}
 	//right
-	if(face == RIGHT || face == IDLE_RIGHT){
-		instance_create_depth(x + 12, y, 1, obj_attack_collider)
-		face = ATTACK_RIGHT;	
-		_attacking = true;
+	if(face == IDLE_RIGHT){
+	   	instance_create_depth(x + 12, y, 1, obj_attack_collider)
+		face = ATTACK_RIGHT
 	}
 
 }
@@ -94,15 +91,35 @@ if (_abs__h_speed > 0 || _abs__v_speed > 0) {
     if (_abs__h_speed > _abs__v_speed) {
         if (_h_speed > 0) {
 			
-           if(!_attacking) face = RIGHT;
+           if(!_attacking){
+			   face = RIGHT;
+		   } else {
+			   	instance_create_depth(x + 12, y, 1, obj_attack_collider)
+				face = ATTACK_RIGHT
+		   }
         } else if (_h_speed < 0) {
-            if(!_attacking) face = LEFT;
+            if(!_attacking){
+				face = LEFT;
+			} else {
+				instance_create_depth(x - 12, y, 1, obj_attack_collider)
+				face = ATTACK_LEFT	
+			}
         }
     } else {
         if (_v_speed > 0) {
-           if(!_attacking) face = DOWN;
+           if(!_attacking){
+			   face = DOWN;
+		   } else {
+			   	instance_create_depth(x, y + 12, 1, obj_attack_collider)
+				face = ATTACK_DOWN;	
+		}
         } else if (_v_speed < 0) {
-           if(!_attacking) face = UP;
+           if(!_attacking){
+			   face = UP;
+		   } else {
+			   	instance_create_depth(x, y - 12, 1, obj_attack_collider)	
+				face = ATTACK_UP;	
+		   }
         }
     }
 } else {

@@ -14,14 +14,14 @@ if(!setup)
 	
 	//Loop through the pages
 	
-	for(var p = 0; p < page_number; p++)
+	for(var _p = 0; _p < page_number; _p++)
 	{
 		//find out how many chars are on each page of text in the text_length array
-		text_length[p] = string_length(text[p]);
+		text_length[_p] = string_length(text[_p]);
 		
 		//get the x pos for the textbox
 			//This is when no character box is on screen (Centering the textbox)
-			text_x_offset[p] = 44;
+			text_x_offset[_p] = 44;
 	}
 }
 
