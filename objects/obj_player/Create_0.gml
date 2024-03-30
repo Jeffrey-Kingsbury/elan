@@ -14,6 +14,10 @@ sprite[IDLE_RIGHT] = spr_player_idle_right;
 sprite[IDLE_UP] = spr_player_idle_up;
 sprite[IDLE_LEFT] = spr_player_idle_left;
 sprite[IDLE_DOWN] = spr_player_idle_down;
+sprite[ATTACK_RIGHT] = spr_player_attack_right;
+sprite[ATTACK_LEFT] = spr_player_attack_left;
+sprite[ATTACK_UP] = spr_player_attack_up;
+sprite[ATTACK_DOWN] = spr_player_attack_down;
 
 face = IDLE_DOWN;
 

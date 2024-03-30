@@ -1,6 +1,31 @@
 mask_index = sprite[DOWN];
 sprite_index = sprite[face];
 
+if(_hitable){
+	if(_hit_by_attack){
+		
+		while( _hit_knockback_step < 4){
+				if(x < _hit_x){
+					x -= 2;
+				}	
+				else if( x > _hit_x) {
+					x += 2;	
+				}
+				if(y < _hit_y){
+					y -= 2;
+				}	
+				else if( y > _hit_y) {
+					y += 2;	
+				}
+				_hit_knockback_step++;
+		}
+		_hit_knockback_step = 0;
+		_hit_by_attack = false;
+		_hit_x = 0;
+		_hit_y = 0;
+	}
+}
+
 if (input_check_pressed("interact")) {
     if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(400, obj_player.direction), obj_player.x + lengthdir_y(400, obj_player.direction), self, 0, 0) && !instance_exists(obj_textbox)) {
         if (talking_text != "") {

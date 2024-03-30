@@ -2,6 +2,7 @@ textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + 122;
 accept_key = input_check_pressed("accept") || input_check_pressed("interact") || input_check_pressed("back");
 draw_set_font(fnt_dialog);
+
 //init
 if(!setup) 
 {
@@ -94,7 +95,7 @@ if(draw_char == text_length[page] && page == page_number - 1)
 	
 	//draw options
 	var _op_space = 20;
-	var _op_border = 4;
+	var _op_border = 8;
 	for (var op = 0; op < option_number; op++)
 	{
 		//draw option box
@@ -105,14 +106,17 @@ if(draw_char == text_length[page] && page == page_number - 1)
 		if(option_pos == op)
 		{
 			draw_sprite(spr_opt_arrow, 0, _txtb_x, _txtb_y - _op_space * option_number + _op_space * op);
-		}
+			draw_set_color(c_yellow);
+			draw_text(_txtb_x + 16 + _op_border, _txtb_y - _op_space * option_number + _op_space * op + 2, option[op]);
+		}else {
 		
 		//draw option text
+		draw_set_color(c_white);
 		draw_text(_txtb_x + 16 + _op_border, _txtb_y - _op_space * option_number + _op_space * op + 2, option[op]);
-	}
+		}}
 }
 
-
+draw_set_color(c_white);
 
 //draw text
 var _drawtext = string_copy(text[page], 1, draw_char);
