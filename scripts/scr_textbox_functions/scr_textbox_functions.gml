@@ -1,10 +1,57 @@
-/// @param text(string)
-function scr_text(_text, _audio = false, _audio_props = {sound: asset_sound, priority: 1, loop: false, gain: 1}){
-
+/// @param text
+/// @param [character]
+/// @param [side]
+function scr_text(_text){
+	scr_set_defaults_for_text();
 	text[page_number] = _text;
+	
+	if(argument_count > 1){
+		switch(argument[1]){
+		
+		case "player":
+			speaker_sprite[page_number] = spr_player_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_blu;
+		break;
+		
+		case "player-yes":
+			speaker_sprite[page_number] = spr_player_portrait_yes;
+			txtb_spr[page_number] = spr_dialog_box_blu;
+		break;
+		
+		case "player-no":
+			speaker_sprite[page_number] = spr_player_portrait_no;
+			txtb_spr[page_number] = spr_dialog_box_blu;
+		break;
+		
+		case "dad":
+			speaker_sprite[page_number] = spr_dad_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+		break;
+		
+		case "dad-yes":
+			speaker_sprite[page_number] = spr_dad_portrait_yes;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+		break;
+		
+		case "dad-no":
+			speaker_sprite[page_number] = spr_dad_portrait_no;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+		break;
+		
+		case "news":
+			speaker_sprite[page_number] = spr_breaking_news;
+			txtb_spr[page_number] = spr_dialog_box_red;
+			speaker_side[page_number] = -1;
+		break;
+		}	
+	}
+	
+	
+	if(argument_count > 2){
+		speaker_side[page_number] = argument[2];
+	}
+	
 	page_number++;
-	audio[page_number] = _audio;	
-	audio_props[page_number] = _audio_props;
 }
 
 /// @param option

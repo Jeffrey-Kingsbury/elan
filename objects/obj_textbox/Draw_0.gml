@@ -20,15 +20,78 @@ if(!setup)
 		text_length[_p] = string_length(text[_p]);
 		
 		//get the x pos for the textbox
+		
+		//char on left
+		text_x_offset[_p] = 103;
+		portrait_x_offset[_p] = 30;
+		
+		//char on right
+		if(speaker_side[_p] == -1){
+			text_x_offset[_p] = 30;
+			portrait_x_offset[_p] = 269;
+		}
+		
+		if(speaker_sprite[_p] == noone){
 			//This is when no character box is on screen (Centering the textbox)
-			text_x_offset[_p] = 44;
+			text_x_offset[_p] = 66;	
+		}
+			
+			
+			//setting individual characters and finding where the lines of text should break
+			for(var _c = 0; _c < text_length[_p]; _c++){
+				//strings dont index at 0th, they index at 1st
+				var _char_pos = _c + 1;
+				
+				//store individual characters in the char array
+				char[_c, _p] = string_char_at(text[_p], _char_pos);
+				
+				//get current width of the line
+				var _txt_up_to_char = string_copy(text[_p], 1, _char_pos);
+				var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[_c, _p]);
+				
+				//get the last free space
+				if(char[_c, _p] == " "){
+					last_free_space = _char_pos + 1;
+				}
+				
+				//get the line breaks
+				if(_current_txt_w - line_break_offset[_p] > line_width){
+					line_break_pos[line_break_num[_p], _p] = last_free_space;
+					line_break_num[_p]++;
+					var _txt_up_to_last_space = string_copy(text[_p], 1, last_free_space);
+					var _last_free_space_string = string_char_at(text[_p], last_free_space);
+					line_break_offset[_p] = string_width(_txt_up_to_last_space) - string_width(_last_free_space_string);
+				}
+			}
+			
+			//getting each characters coordinates
+			for(var _c = 0; _c < text_length[_p]; _c++){
+				var _char_pos = _c + 1;	
+				var _txt_x = textbox_x + text_x_offset[_p] + border;
+				var _txt_y = textbox_y + border;
+				//get current width of the line
+				var _txt_up_to_char = string_copy(text[_p], 1, _char_pos);
+				var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[_c, _p]);
+ 				var _txt_line = 0;
+				
+				//compensate for string breaks
+				for(var _lb = 0; _lb < line_break_num[_p]; _lb++){
+						if(_char_pos >= line_break_pos[_lb, _p]){
+							var _str_copy = string_copy(text[_p], line_break_pos[_lb, _p], _char_pos - line_break_pos[_lb, _p]);
+							_current_txt_w = string_width(_str_copy);
+							
+							//record the line this char should be on
+							_txt_line = _lb + 1; //no 0th index for chars
+							
+						}
+				}
+				
+				char_x[_c,_p] = _txt_x + _current_txt_w;
+				char_y[_c, _p] = _txt_y + _txt_line * line_sep;
+		}
 	}
 }
 
-
-if(audio[page] && !audio_is_playing(audio_props[page].sound)){
-	audio_play_sound(audio_props[page].sound, audio_props[page].sound, audio_props[page].loop, audio_props[page].gain);
-}
 
 //typing the text out
 if(draw_char < text_length[page])
@@ -77,11 +140,25 @@ if(accept_key)
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y;
 txtb_img += txtb_img_spd;
-txtb_spr_w = sprite_get_width(txtb_spr);
-txtb_spr_h = sprite_get_height(txtb_spr);
+txtb_spr_w = sprite_get_width(txtb_spr[page]);
+txtb_spr_h = sprite_get_height(txtb_spr[page]);
+
+//draw the speaker
+if(speaker_sprite[page] != noone){
+	sprite_index = speaker_sprite[page];
+	if(draw_char == text_length[page]){image_index = 0};
+	var _speaker_x = textbox_x + portrait_x_offset[page];
+	if(speaker_side[page] == -1){
+		_speaker_x += sprite_width;
+	}
+	
+	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, .8);
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
+	
+}
 
 //back of textbox
-draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width / txtb_spr_w, textbox_height / txtb_spr_h, 0, c_white, .8);
+draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width / txtb_spr_w, textbox_height / txtb_spr_h, 0, c_white, .8);
 //Options
 if(draw_char == text_length[page] && page == page_number - 1)
 {
@@ -100,7 +177,7 @@ if(draw_char == text_length[page] && page == page_number - 1)
 	{
 		//draw option box
 		var _o_w = string_width(option[op]) + _op_border * 2;
-		draw_sprite_ext(txtb_spr, txtb_img, _txtb_x + 16, _txtb_y - _op_space * option_number + _op_space * op, _o_w / txtb_spr_w, (_op_space - 1) / txtb_spr_h, 0, c_white, 0.8);
+		draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + 16, _txtb_y - _op_space * option_number + _op_space * op, _o_w / txtb_spr_w, (_op_space - 1) / txtb_spr_h, 0, c_white, 0.8);
 		
 		//draw option arrow
 		if(option_pos == op)
@@ -119,5 +196,6 @@ if(draw_char == text_length[page] && page == page_number - 1)
 draw_set_color(c_white);
 
 //draw text
-var _drawtext = string_copy(text[page], 1, draw_char);
-draw_text_ext(_txtb_x + border, _txtb_y + border, _drawtext, line_sep, line_width); 
+for(var _c = 0; _c < draw_char; _c++){
+	draw_text(char_x[_c, page], char_y[_c, page], char[_c, page]);
+}

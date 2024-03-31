@@ -1,3 +1,13 @@
+function scr_set_defaults_for_text(){
+	line_break_pos[0, page_number] = 999;
+	line_break_num[page_number] = 0;
+	line_break_offset[page_number] = 0;
+	
+	txtb_spr[page_number] = spr_dialog_box_blu;
+	speaker_sprite[page_number] = noone;
+	speaker_side[page_number] = 1;
+}
+
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_game_text(_text_id){
@@ -13,15 +23,17 @@ switch(_text_id){
 	break;
 	
 	case "bed_01_dad":
-		scr_text("You're going to hang out with P?");
-		scr_text("Alright, well. It's really coming down out there...");
-		scr_text("Better bring your galoshes.");
+		scr_text("Hey dad, I'm heading out.", "player");
+		scr_text("You're going to hang out with P?", "dad", -1);
+		scr_text("Alright, well. It's really coming down out there...", "dad-no", -1);
+		scr_text("Better bring your galoshes.", "dad-yes", -1);
 	break;
 
 	case "bed_01_1":
 	inst_house_01_player.block_input = false;
-	scr_text("huh, wha-?", true, {sound: snd_alarm_clock, loop: false, gain: 1});	
-	scr_text("ughhh..");
+	//audio_play_sound(snd_alarm_clock, 1, true)
+	scr_text("huh, wha-?", "player");	
+	scr_text("ughhh..", "player-no");
 		scr_option("I'm up!", "bed_01_opt_01")		
 		scr_option("Not yet!", "bed_01_opt_02")
 	break;
@@ -32,8 +44,8 @@ switch(_text_id){
 			inst_house_01_fader.fader = true;
 			inst_upstairs_activate_menu._init = true;
 		scr_text("*click*");
-		scr_text("Shit. I must have dozed off...");
-		scr_text("I better get going.");
+		scr_text("Shit. I must have dozed off...", "player");
+		scr_text("I better get going.", "player-yes");
 			instance_destroy(inst_house_01_speakblock_01);
 		break;
 		
@@ -73,32 +85,33 @@ function scr_interactable_text(_text_id){
 		
 		
 		case "house_01_downstairs_tv_01":
-			scr_text("The body of seventeen year old Dawn Marie Birnbaum was discovered late last night in a snowbank off Interstate 80. Investigators say the victim was raped before being strangled to death.");		
-			scr_text("Stay tuned for more updates as this case unfolds.");
+			scr_text("The body of seventeen year old Dawn Marie Birnbaum was discovered late last night in a snowbank off Interstate 80.", "news");		
+			scr_text("Investigators say the victim was raped before being strangled to death.", "news");
+			scr_text("Stay tuned for more updates as this case unfolds.", "news");
 		break;
 		
 		case "house_01_downstairs_tv_02":
-			scr_text("The body of seventeen year old Lorene Larhette was discovered after she had frozen to death along Joyce Howden.");		
-			scr_text("Lorene was a student at Northwest Outward Bound School for troubled teens.");
-			scr_text("Stay tuned for more updates as this case unfolds.");
+			scr_text("The body of seventeen year old Lorene Larhette was discovered after she had frozen to death along Joyce Howden.", "news");		
+			scr_text("Lorene was a student at Northwest Outward Bound School for troubled teens.", "news");
+			scr_text("Stay tuned for more updates as this case unfolds.", "news");
 		break;
 		
 		case "house_01_downstairs_tv_03":
-			scr_text("Police are investigating a wrongful death case at Forest Haven Asylum this evening.");		
-			scr_text("Witnesses say that seventeen year old Joy Evans choked to death after they were force fed while lying down.");
-			scr_text("Stay tuned for more updates as this case unfolds.");
+			scr_text("Police are investigating a wrongful death case at Forest Haven Asylum this evening.", "news");		
+			scr_text("Witnesses say that seventeen year old Joy Evans choked to death after they were force fed while lying down.", "news");
+			scr_text("Stay tuned for more updates as this case unfolds.", "news");
 		break;
 		
 		case "house_01_downstairs_tv_04":
-			scr_text("Tragedy tonight as firefighters work to put out the blaze that left two students dead at Grove School.");		
-			scr_text("We are getting confirmation that the victims names were Jonathan S. Lenoff and Peter Cooper.");
-			scr_text("Stay tuned for more updates as this case unfolds.");
+			scr_text("Tragedy tonight as firefighters work to put out the blaze that left two students dead at Grove School.", "news");		
+			scr_text("We are getting confirmation that the victims names were Jonathan S. Lenoff and Peter Cooper.", "news");
+			scr_text("Stay tuned for more updates as this case unfolds.", "news");
 		break;
 		
 		case "house_01_downstairs_tv_05":
-			scr_text("Fourteen year old Connie Munson was found dead in an apparent escape attempt from the Bethesda home for girls.");		
-			scr_text("Investigators agree that she was extremely troubled. Our thoughts and prayers to the family of Connie.");
-			scr_text("Next up, Sports.");
+			scr_text("Fourteen year old Connie Munson was found dead in an apparent escape attempt from the Bethesda home for girls.", "news");		
+			scr_text("Investigators agree that she was extremely troubled. Our thoughts and prayers to the family of Connie.", "news");
+			scr_text("Next up, Sports.", "news");
 		break;
 
 

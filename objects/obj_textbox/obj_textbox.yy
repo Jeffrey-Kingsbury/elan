@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialog_box",
-    "path":"sprites/spr_dialog_box/spr_dialog_box.yy",
+    "name":"spr_dialog_box_blu",
+    "path":"sprites/spr_dialog_box_blu/spr_dialog_box_blu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

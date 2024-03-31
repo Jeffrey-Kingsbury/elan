@@ -5,7 +5,7 @@ if (obj_player) {
 }
 
 					 
-if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(32, obj_player.direction), obj_player.x + lengthdir_y(32, obj_player.direction), self, 0, 0)) {
+if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(16, obj_player.direction), obj_player.y + lengthdir_y(16, obj_player.direction), self, 0, 0)) {
     draw_icon = true;
 
     if (input_check_pressed("interact") == 1) {
@@ -18,7 +18,7 @@ if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(32, ob
 				array_push(global._player_seen_news, text_id[_ran_text])
 				}
 			}
-			
+			set_player_face_to_idle()
             create_textbox(text_id[_ran_text], true);
 			
             if (remove_after_reading) {

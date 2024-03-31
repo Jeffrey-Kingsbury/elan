@@ -13,3 +13,4 @@ _hit_by_attack = false;
 _hit_x = 0;
 _hit_y = 0;
 _hit_knockback_step = 0;
+
