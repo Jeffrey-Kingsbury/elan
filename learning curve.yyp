@@ -1126,10 +1126,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_start_screen","path":"rooms/rm_start_screen/rm_start_screen.yy",},},
     {"roomId":{"name":"rm_house_01_downstairs","path":"rooms/rm_house_01_downstairs/rm_house_01_downstairs.yy",},},
     {"roomId":{"name":"rm_forest_01","path":"rooms/rm_forest_01/rm_forest_01.yy",},},
     {"roomId":{"name":"rm_attack_test","path":"rooms/rm_attack_test/rm_attack_test.yy",},},
-    {"roomId":{"name":"rm_start_screen","path":"rooms/rm_start_screen/rm_start_screen.yy",},},
     {"roomId":{"name":"rm_house_01_upstairs","path":"rooms/rm_house_01_upstairs/rm_house_01_upstairs.yy",},},
     {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
