@@ -6,6 +6,7 @@ function scr_set_defaults_for_text(){
 	txtb_spr[page_number] = spr_dialog_box_blu;
 	speaker_sprite[page_number] = noone;
 	speaker_side[page_number] = 1;
+	moving_camera = false;
 }
 
 // Script assets have changed for v2.3.0 see
@@ -58,19 +59,19 @@ switch(_text_id){
 		
 		
 		case "bought_and_paid_for_taxi_0":
-		scr_text("Sure is some weather we're having lately...");
-		scr_text("Feels like it hasn't stopped raining in weeks.");
+		scr_text("Sure is some weather we're having lately...", "taxi");
+		scr_text("Feels like it hasn't stopped raining in weeks.", "taxi");
 			scr_option("Remain silent", "bought_and_paid_for_taxi_01");
 			scr_option("Yeah..", "bought_and_paid_for_taxi_02");
 		break;
 		
 		case "bought_and_paid_for_taxi_01":
-			scr_text("Not very talkative are you...");
-			scr_text("That's alright...");
+			scr_text("Not very talkative are you...", "taxi");
+			scr_text("That's alright...", "taxi");
 			break;
 			
 		case "bought_and_paid_for_taxi_02":
-			scr_text("Mind if I ask what brings you to this part of town so late?");
+			scr_text("Mind if I ask what brings you to this part of town so late?", "taxi");
 			break;
 }
 }

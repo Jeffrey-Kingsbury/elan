@@ -1,6 +1,7 @@
 /// @param text
 /// @param [character]
 /// @param [side]
+/// @param [moving camera]
 function scr_text(_text){
 	scr_set_defaults_for_text();
 	text[page_number] = _text;
@@ -43,6 +44,12 @@ function scr_text(_text){
 			txtb_spr[page_number] = spr_dialog_box_red;
 			speaker_side[page_number] = -1;
 		break;
+		
+		case "taxi":
+			speaker_sprite[page_number] = spr_dad_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_yel;
+			speaker_side[page_number] = -1;
+		break;
 		}	
 	}
 	
@@ -51,6 +58,9 @@ function scr_text(_text){
 		speaker_side[page_number] = argument[2];
 	}
 	
+	if(argument_count > 3){
+		moving_camera = argument[3];	
+	}
 	page_number++;
 }
 

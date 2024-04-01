@@ -13,11 +13,11 @@ if(!setup)
 	draw_set_halign(fa_left);
 	
 	//Loop through the pages
-	
 	for(var _p = 0; _p < page_number; _p++)
 	{
 		//find out how many chars are on each page of text in the text_length array
 		text_length[_p] = string_length(text[_p]);
+		
 		
 		//get the x pos for the textbox
 		
@@ -195,7 +195,13 @@ if(draw_char == text_length[page] && page == page_number - 1)
 
 draw_set_color(c_white);
 
+if(room == rm_forest_01){ //hacky fix on moving textboxes. You lose text effects but thats the fix
+var _draw_txt = string_copy(text[page], 1, draw_char)
+draw_text_ext(_txtb_x + border, _txtb_y + border, _draw_txt, line_sep, line_width);
+
+} else {
 //draw text
 for(var _c = 0; _c < draw_char; _c++){
 	draw_text(char_x[_c, page], char_y[_c, page], char[_c, page]);
+}
 }
