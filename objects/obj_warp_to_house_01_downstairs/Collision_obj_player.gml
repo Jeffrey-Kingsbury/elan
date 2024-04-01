@@ -27,6 +27,7 @@ if(_has_key || array_contains(global.visited_rooms, "rm_house_01_upstairs")){
 		
 } else {
 	 if(!player_collide){
+		set_player_face_to_idle()
 		create_textbox("bed_01_need_key", true);
 		inst_house_01_keys_prompt.is_visible = true;
 		player_collide = true;	 

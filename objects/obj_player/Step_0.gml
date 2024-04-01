@@ -6,8 +6,10 @@ v_input = _down_key  - _up_key ;
 
 if(input_check("run")){
 move_speed = 1.75;	
+image_speed = 1.5;
 } else {
 move_speed = 1;	
+image_speed = 1;
 }
 
 
