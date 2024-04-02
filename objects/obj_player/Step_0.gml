@@ -4,40 +4,19 @@ var _up_key  = input_check("up");
 var _down_key  = input_check("down");
 v_input = _down_key  - _up_key ;
 
-if(input_check("run")){
-move_speed = 1.75;	
-image_speed = 1.5;
+if(
+input_check("run")
+&& face != IDLE_DOWN 
+&& face != IDLE_LEFT
+&& face != IDLE_RIGHT
+&& face != IDLE_UP
+){
+	move_speed = 1.75;	
+	image_speed = 1.75;
 } else {
-move_speed = 1;	
-image_speed = 1;
+	move_speed = 1;	
+	image_speed = 1;
 }
-
-
-// ATTACKING
-//if(input_check("interact") && !_attacking && !instance_exists(obj_attack_collider)){
-//	_attacking = true;
-//	//up
-//	if(face == IDLE_UP){
-//		instance_create_depth(x, y - 12, 1, obj_attack_collider)	
-//		face = ATTACK_UP;
-//	}
-//	//down
-//	if(face == IDLE_DOWN){
-//		instance_create_depth(x, y + 12, 1, obj_attack_collider)
-//		face = ATTACK_DOWN;	
-//	}
-//	//left
-//	if(face == IDLE_LEFT){
-//		instance_create_depth(x - 12, y, 1, obj_attack_collider)
-//		face = ATTACK_LEFT	
-//	}
-//	//right
-//	if(face == IDLE_RIGHT){
-//	   	instance_create_depth(x + 12, y, 1, obj_attack_collider)
-//		face = ATTACK_RIGHT
-//	}
-
-//}
 
 global._player_x = x;
 global._player_y = y;

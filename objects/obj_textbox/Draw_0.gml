@@ -195,7 +195,7 @@ if(draw_char == text_length[page] && page == page_number - 1)
 
 draw_set_color(c_white);
 
-if(room == rm_forest_01){ //hacky fix on moving textboxes. You lose text effects but thats the fix
+if(array_contains(moving_rooms, room)){ //hacky fix on moving textboxes. You lose text effects but thats the fix
 var _draw_txt = string_copy(text[page], 1, draw_char)
 draw_text_ext(_txtb_x + border, _txtb_y + border, _draw_txt, line_sep, line_width);
 

@@ -58,6 +58,10 @@ switch(_text_id){
 		break;
 		
 		
+		/////////////////BOUGHT AND PAID FOR:
+		
+		//TAXI TO P
+		
 		case "bought_and_paid_for_taxi_0":
 		scr_text("Sure is some weather we're having lately...", "taxi");
 		scr_text("Feels like it hasn't stopped raining in weeks.", "taxi");
@@ -72,6 +76,33 @@ switch(_text_id){
 			
 		case "bought_and_paid_for_taxi_02":
 			scr_text("Mind if I ask what brings you to this part of town so late?", "taxi");
+			break;
+			
+			
+			//PULLED OVER
+			
+			case "pulled_over_chatting":
+				scr_text("Dude can you believe it?!", "p", -1);
+				scr_text("Were going to make so much fucking money!", "p", -1);
+				scr_text("I still think it's risky as fuck.", "player");
+				scr_text("You seriously need to chill dude. Relax for once.", "p", -1);
+
+			break;
+			
+			
+			case "pulled_over":
+				scr_text("Oh shit.", "p", -1);
+				scr_text("Oh shit oh shit oh shit.", "p", -1);
+				scr_text("Sober faces.", "p", -1);
+				break;
+				
+			case "pulled_over_cop":
+				scr_text("Hey there, the reason I pulled you over today was because you were swerving back there.", "taxi");
+				scr_text("Can I have your license and regi- ...", "taxi");
+				scr_text("...", "taxi");
+				scr_text("Whats that smell, boys?", "taxi");
+
+
 			break;
 }
 }

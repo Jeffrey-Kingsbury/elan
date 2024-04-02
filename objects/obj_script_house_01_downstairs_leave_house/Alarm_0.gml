@@ -1,1 +1,1 @@
-room_goto(rm_forest_01);
+room_goto(rm_taxi_to_p);

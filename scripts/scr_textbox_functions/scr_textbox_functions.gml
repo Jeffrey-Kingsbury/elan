@@ -50,6 +50,11 @@ function scr_text(_text){
 			txtb_spr[page_number] = spr_dialog_box_yel;
 			speaker_side[page_number] = -1;
 		break;
+		
+		case "p":
+			speaker_sprite[page_number] = spr_p_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_grn;
+			break;
 		}	
 	}
 	
