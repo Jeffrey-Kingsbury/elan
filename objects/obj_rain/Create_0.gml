@@ -5,7 +5,6 @@ length = 4;
 edge = 50; //How far outside of the view should we create drops
 max_raindrops = 500;
 
-
 var xx = camera_get_view_x(view_camera[0]);
 var yy = camera_get_view_y(view_camera[0]);
 var w = camera_get_view_width(view_camera[0]);

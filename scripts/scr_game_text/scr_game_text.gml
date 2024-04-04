@@ -9,8 +9,6 @@ function scr_set_defaults_for_text(){
 	moving_camera = false;
 }
 
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_game_text(_text_id){
 
 switch(_text_id){
@@ -86,22 +84,32 @@ switch(_text_id){
 				scr_text("Were going to make so much fucking money!", "p", -1);
 				scr_text("I still think it's risky as fuck.", "player");
 				scr_text("You seriously need to chill dude. Relax for once.", "p", -1);
-
+				scr_text("We have a literal pound of weed in the car and I'm high as fuck. I'm allowed to be stressed, dickhead.", "player");
+				scr_text("Chill.", "p", -1);
 			break;
 			
 			
 			case "pulled_over":
 				scr_text("Oh shit.", "p", -1);
 				scr_text("Oh shit oh shit oh shit.", "p", -1);
-				scr_text("Sober faces.", "p", -1);
+				scr_text("That cop just pulled out behind us...", "p", -1);
+				scr_text("P, I swear to god I'm going to kick your ass if we make it out of this.", "player");
+				scr_text("Seriously. Chill. I got this.", "p", -1);
+				scr_text("It's going to be fine.", "p", -1);
+				scr_text("It's going to be fine.", "p", -1);
+				scr_text("IT'S GOING TO BE FINE.", "p", -1);
 				break;
 				
 			case "pulled_over_cop":
-				scr_text("Hey there, the reason I pulled you over today was because you were swerving back there.", "taxi");
-				scr_text("Can I have your license and regi- ...", "taxi");
-				scr_text("...", "taxi");
-				scr_text("Whats that smell, boys?", "taxi");
-
+				scr_text("Hey there, where you boys headed?", "taxi");
+				scr_text("Is there a problem officer?", "p");
+				scr_text("Nope, no problem. I just need to see your license and registration.", "taxi");
+				scr_text("Am I being detained?", "p");
+				scr_text("Dude.", "player");
+				scr_text("I.... Yeah.. Sorry, here you go.", "p", -1);
+				scr_text("What's that smell boys?", "taxi");
+				scr_text("What smell?", "player");
+				scr_text("Why don't you both go ahead and step out of the car for me.", "taxi");
 
 			break;
 }
