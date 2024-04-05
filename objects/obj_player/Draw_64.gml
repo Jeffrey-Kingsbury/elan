@@ -22,3 +22,8 @@ for (var i = 0; i < array_length(global.player_inventory); i++) {
         startY += ySpacing;
     }
 }
+
+
+if(draw_exit_pooping){
+	draw_sprite_ext(spr_controls_KB_SPACE, -1,  display_get_gui_width() / 2, display_get_gui_height() - sprite_height * 2, 4, 4, 0, c_white, 1);
+}

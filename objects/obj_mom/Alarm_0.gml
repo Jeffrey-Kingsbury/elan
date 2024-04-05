@@ -1,0 +1,1 @@
+path_start(pth_house_01_upstairs_mom, 0.3, path_action_stop, false);

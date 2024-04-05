@@ -46,6 +46,23 @@ mask_index = sprite[DOWN];
 // Set sprite index based on the face direction
 sprite_index = sprite[face];
 
+if(is_pooping){
+	sprite_index= sprite[READING_DOWN];
+	speed = 0;
+	move_speed = 0;
+	draw_exit_pooping = true;
+	
+	if (input_check_pressed("accept") == 1){
+		y += 15;
+		is_pooping = false;
+		draw_exit_pooping = false;
+		set_poop_face = false;
+	audio_play_sound(snd_fart, 1, false);
+	}
+	
+exit;
+}
+
 //block controls if a textbox is open or flag is set
 if(instance_exists(obj_textbox)){exit}
 if(block_input){exit}

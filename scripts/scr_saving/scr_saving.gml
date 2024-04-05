@@ -2,6 +2,7 @@ function save_game(){
 	var _file = file_text_open_write("save.json");
 	
 	var _save = json_stringify({
+		"player_name": global.player_name,
 		"player_x": global._player_x,
 		"player_y": global._player_y,
 		"player_room": global._player_room,
@@ -19,6 +20,7 @@ function load_game(){
 	var _data = json_parse(_json);
 
 	room = _data.player_room;
+	global.player_name = _data.player_name;
 	global._player_room = _data.player_room;
 	global._player_x = _data.player_x;
 	global._player_y = _data.player_y;

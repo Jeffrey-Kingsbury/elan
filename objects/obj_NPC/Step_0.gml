@@ -50,3 +50,16 @@ if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(16, ob
         _show_overhead = false;
     }
 
+if(pathing){
+	sprite_index = sprite[face];
+if (direction >= 0 && direction < 85) {
+    face = RIGHT;
+} else if (direction >= 85 && direction < 175) {
+    face = UP;
+} else if (direction >= 175 && direction < 265) {
+    face = LEFT;
+} else {
+    face = DOWN;
+}
+		
+}

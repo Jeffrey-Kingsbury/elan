@@ -25,7 +25,7 @@ switch(_text_id){
 		scr_text("Hey dad, I'm heading out.", "player");
 		scr_text("You're going to hang out with P?", "dad", -1);
 		scr_text("Alright, well. It's really coming down out there...", "dad-no", -1);
-		scr_text("Better bring your galoshes.", "dad-yes", -1);
+		scr_text("Better bring your galoshes, " + global.player_name, "dad-yes", -1);
 	break;
 
 	case "bed_01_1":

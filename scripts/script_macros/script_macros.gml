@@ -10,5 +10,7 @@
 #macro ATTACK_LEFT 9
 #macro ATTACK_UP 10
 #macro ATTACK_DOWN 11
+#macro READING_DOWN 12
+#macro CELL_DOWN 13
 
 #macro ITEM_KEY_GOLD "spr_item_key"

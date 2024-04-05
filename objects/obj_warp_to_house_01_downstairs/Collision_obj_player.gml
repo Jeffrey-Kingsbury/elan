@@ -24,6 +24,7 @@ if(_has_key || array_contains(global.visited_rooms, "rm_house_01_upstairs")){
 		audio_play_sound(snd_door_open_close, 1, false);	
 		array_delete(global.player_inventory, _key_index, 1);
 		alarm[0] = 1;
+		save_game();
 		
 } else {
 	 if(!player_collide){

@@ -18,7 +18,13 @@ sprite[ATTACK_RIGHT] = spr_player_attack_right;
 sprite[ATTACK_LEFT] = spr_player_attack_left;
 sprite[ATTACK_UP] = spr_player_attack_up;
 sprite[ATTACK_DOWN] = spr_player_attack_down;
-
+sprite[READING_DOWN] = spr_player_sitting_reading_down
+sprite[CELL_DOWN] = spr_player_sitting_cell_down
 face = IDLE_DOWN;
+
+is_pooping = false;
+set_poop_face = false;
+draw_exit_pooping = false;
+
 
 global._player_room = room;
