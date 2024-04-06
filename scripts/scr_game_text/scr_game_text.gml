@@ -5,6 +5,7 @@ function scr_set_defaults_for_text(){
 	
 	txtb_spr[page_number] = spr_dialog_box_blu;
 	speaker_sprite[page_number] = noone;
+	speaker_name[page_number] = noone;
 	speaker_side[page_number] = 1;
 	moving_camera = false;
 }

@@ -1152,6 +1152,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_attack_test","path":"rooms/rm_attack_test/rm_attack_test.yy",},},
     {"roomId":{"name":"rm_house_01_upstairs","path":"rooms/rm_house_01_upstairs/rm_house_01_upstairs.yy",},},
     {"roomId":{"name":"rm_start_screen","path":"rooms/rm_start_screen/rm_start_screen.yy",},},
     {"roomId":{"name":"rm_name_entry","path":"rooms/rm_name_entry/rm_name_entry.yy",},},
@@ -1159,7 +1160,6 @@
     {"roomId":{"name":"rm_house_01_downstairs","path":"rooms/rm_house_01_downstairs/rm_house_01_downstairs.yy",},},
     {"roomId":{"name":"rm_pulled_over","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},},
     {"roomId":{"name":"rm_taxi_to_p","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},},
-    {"roomId":{"name":"rm_attack_test","path":"rooms/rm_attack_test/rm_attack_test.yy",},},
     {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
   ],
   "templateType":"game",

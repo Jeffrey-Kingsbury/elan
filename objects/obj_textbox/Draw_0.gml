@@ -152,6 +152,13 @@ if(speaker_sprite[page] != noone){
 		_speaker_x += sprite_width;
 	}
 	
+	
+	if(speaker_name[page] != noone){
+	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y + sprite_height + 2, sprite_width/txtb_spr_w, 1, 0, c_white, .8);
+	draw_set_halign(fa_center);
+	draw_text(textbox_x + portrait_x_offset[page] +32,  textbox_y + 67, speaker_name[page])
+	draw_set_halign(fa_left);
+	}
 	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, .8);
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
 	

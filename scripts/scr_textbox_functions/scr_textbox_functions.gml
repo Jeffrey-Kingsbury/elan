@@ -12,31 +12,37 @@ function scr_text(_text){
 		case "player":
 			speaker_sprite[page_number] = spr_player_portrait_speaking;
 			txtb_spr[page_number] = spr_dialog_box_blu;
+			speaker_name[page_number] = global.player_name;
 		break;
 		
 		case "player-yes":
 			speaker_sprite[page_number] = spr_player_portrait_yes;
 			txtb_spr[page_number] = spr_dialog_box_blu;
+			speaker_name[page_number] = global.player_name;
 		break;
 		
 		case "player-no":
 			speaker_sprite[page_number] = spr_player_portrait_no;
 			txtb_spr[page_number] = spr_dialog_box_blu;
+			speaker_name[page_number] = global.player_name;
 		break;
 		
 		case "dad":
 			speaker_sprite[page_number] = spr_dad_portrait_speaking;
 			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "dad";
 		break;
 		
 		case "dad-yes":
 			speaker_sprite[page_number] = spr_dad_portrait_yes;
 			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "dad";
 		break;
 		
 		case "dad-no":
 			speaker_sprite[page_number] = spr_dad_portrait_no;
 			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "dad";
 		break;
 		
 		case "news":
@@ -49,11 +55,13 @@ function scr_text(_text){
 			speaker_sprite[page_number] = spr_dad_portrait_speaking;
 			txtb_spr[page_number] = spr_dialog_box_yel;
 			speaker_side[page_number] = -1;
+			speaker_name[page_number] = "Taxi Driver";
 		break;
 		
 		case "p":
 			speaker_sprite[page_number] = spr_p_portrait_speaking;
 			txtb_spr[page_number] = spr_dialog_box_grn;
+			speaker_name[page_number] = "P";
 			break;
 		}	
 	}
