@@ -154,10 +154,10 @@ if(speaker_sprite[page] != noone){
 	
 	
 	if(speaker_name[page] != noone){
-	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y + sprite_height + 2, sprite_width/txtb_spr_w, 1, 0, c_white, .8);
-	draw_set_halign(fa_center);
-	draw_text(textbox_x + portrait_x_offset[page] +32,  textbox_y + 67, speaker_name[page])
-	draw_set_halign(fa_left);
+		draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y + sprite_height + 2, sprite_width/txtb_spr_w, 1, 0, c_white, .8);
+		draw_set_halign(fa_center);
+		draw_text_ext_transformed(textbox_x + portrait_x_offset[page] +32,  textbox_y + 68.5, speaker_name[page],1.5,64,.75,.75,0)
+		draw_set_halign(fa_left);
 	}
 	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, .8);
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
@@ -209,6 +209,6 @@ draw_text_ext(_txtb_x + border, _txtb_y + border, _draw_txt, line_sep, line_widt
 } else {
 //draw text
 for(var _c = 0; _c < draw_char; _c++){
-	draw_text(char_x[_c, page], char_y[_c, page], char[_c, page]);
+	draw_text_color(char_x[_c, page], char_y[_c, page], char[_c, page],col_1[_c, page], col_2[_c, page], col_3[_c, page], col_4[_c, page], 1);
 }
 }

@@ -3,11 +3,37 @@ function scr_set_defaults_for_text(){
 	line_break_num[page_number] = 0;
 	line_break_offset[page_number] = 0;
 	
+	for(var _c = 0; _c < 200; _c++){
+		col_1[_c, page_number] = c_white;
+		col_2[_c, page_number] = c_white;
+		col_3[_c, page_number] = c_white;
+		col_4[_c, page_number] = c_white;
+	}
+	
 	txtb_spr[page_number] = spr_dialog_box_blu;
 	speaker_sprite[page_number] = noone;
 	speaker_name[page_number] = noone;
 	speaker_side[page_number] = 1;
 	moving_camera = false;
+}
+
+// ---------TEXT VFX -----------
+///@param first_character
+///@param last_character
+///@param color_1
+///@param color_2
+///@param color_3
+///@param color_4
+function scr_text_color(_start, _end, _col1, _col2, _col3, _col4) {
+	
+	for(var _c = _start; _c <= _end; _c++){
+		col_1[_c, page_number - 1] = _col1;
+		col_2[_c, page_number - 1] = _col2;
+		col_3[_c, page_number - 1] = _col3;
+		col_4[_c, page_number - 1] = _col4;
+
+	}
+	
 }
 
 function scr_game_text(_text_id){
@@ -92,6 +118,7 @@ switch(_text_id){
 			
 			case "pulled_over":
 				scr_text("Oh shit.", "p", -1);
+					scr_text_color(3, 6, c_red,c_red,c_white,c_white);
 				scr_text("Oh shit oh shit oh shit.", "p", -1);
 				scr_text("That cop just pulled out behind us...", "p", -1);
 				scr_text("P, I swear to god I'm going to kick your ass if we make it out of this.", "player");
