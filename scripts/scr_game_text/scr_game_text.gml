@@ -12,6 +12,9 @@ function scr_set_defaults_for_text(){
 		float_text[_c, page_number] = 0;
 		float_dir[_c, page_number] = _c * 20;
 		
+		shake_text[_c, page_number] = 0;
+		shake_dir[_c, page_number] = irandom(360);
+		shake_timer[_c, page_number] = irandom(4);
 		
 	}
 	
@@ -46,6 +49,15 @@ function scr_text_color(_start, _end, _col1, _col2, _col3, _col4) {
 function scr_text_float(_start, _end) {
 		for(var _c = _start; _c <= _end; _c++){
 		float_text[_c, page_number - 1] = true;
+
+	}
+}
+
+///@param first_character
+///@param last_character
+function scr_text_shake(_start, _end) {
+		for(var _c = _start; _c <= _end; _c++){
+		shake_text[_c, page_number - 1] = true;
 
 	}
 }
@@ -132,8 +144,9 @@ switch(_text_id){
 			
 			case "pulled_over":
 				scr_text("Oh shit.", "p", -1);
-					scr_text_color(3, 6, c_red,c_red,c_white,c_white);
+					//scr_text_color(3, 6, c_red,c_red,c_white,c_white);
 					scr_text_float(3, 6);
+					//scr_text_shake(3,6)
 				scr_text("Oh shit oh shit oh shit.", "p", -1);
 				scr_text("That cop just pulled out behind us...", "p", -1);
 				scr_text("P, I swear to god I'm going to kick your ass if we make it out of this.", "player");

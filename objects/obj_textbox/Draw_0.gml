@@ -226,6 +226,24 @@ if(float_text[_c, page]){
 float_dir[_c, page] -= 6;
 _float_y = dsin(float_dir[_c, page]); 
 }
-	draw_text_color(char_x[_c, page], char_y[_c, page] + _float_y, char[_c, page],col_1[_c, page], col_2[_c, page], col_3[_c, page], col_4[_c, page], 1);
+
+// Shake text
+var _shake_x = 0;
+var _shake_y = 0;
+if(shake_text[_c, page]){
+	shake_timer[_c, page]--;
+	if(shake_timer[_c, page] <=0){
+		shake_timer[_c, page] = irandom_range(4, 8);
+		shake_dir[_c, page] = irandom(360);
+	}
+	
+		_shake_x = lengthdir_x(0.5, shake_dir[_c, page]);
+	    _shake_y = lengthdir_y(0.5, shake_dir[_c, page]);
+	
+	
+}
+
+//Draw the text
+	draw_text_color(char_x[_c, page] + _shake_x, char_y[_c, page] + _float_y + _shake_y, char[_c, page],col_1[_c, page], col_2[_c, page], col_3[_c, page], col_4[_c, page], 1);
 }
 }
