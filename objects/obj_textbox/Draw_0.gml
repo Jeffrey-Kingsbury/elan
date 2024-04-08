@@ -202,13 +202,30 @@ if(draw_char == text_length[page] && page == page_number - 1)
 
 draw_set_color(c_white);
 
+
+
+	// Effects
+	
+
 if(array_contains(moving_rooms, room)){ //hacky fix on moving textboxes. You lose text effects but thats the fix
 var _draw_txt = string_copy(text[page], 1, draw_char)
-draw_text_ext(_txtb_x + border, _txtb_y + border, _draw_txt, line_sep, line_width);
+draw_text_ext(_txtb_x + border, _txtb_y + border + _float_y, _draw_txt, line_sep, line_width);
 
 } else {
+	
+
+	
+	
 //draw text
 for(var _c = 0; _c < draw_char; _c++){
-	draw_text_color(char_x[_c, page], char_y[_c, page], char[_c, page],col_1[_c, page], col_2[_c, page], col_3[_c, page], col_4[_c, page], 1);
+	
+	// wavy text
+var _float_y = 0;
+
+if(float_text[_c, page]){
+float_dir[_c, page] -= 6;
+_float_y = dsin(float_dir[_c, page]); 
+}
+	draw_text_color(char_x[_c, page], char_y[_c, page] + _float_y, char[_c, page],col_1[_c, page], col_2[_c, page], col_3[_c, page], col_4[_c, page], 1);
 }
 }
