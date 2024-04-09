@@ -1,7 +1,7 @@
 {
   "$GMRoom":"",
   "%Name":"rm_taxi_to_p",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_taxi_to_p/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -21,13 +21,9 @@
     {"name":"inst_233CB1B4","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},
     {"name":"inst_2205003B","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},
     {"name":"inst_39F62A56","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},
-    {"name":"inst_131F8703","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"init","depth":-301,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_131F8703","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_131F8703","objectId":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":18816.0,},
-      ],"layers":[],"name":"init","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_3","depth":-201,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_233CB1B4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_233CB1B4","objectId":{"name":"obj_tc_chapter_1","path":"objects/obj_tc_chapter_1/obj_tc_chapter_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.19624998,"scaleY":0.24494947,"x":320.0,"y":18752.0,},
       ],"layers":[],"name":"Instances_3","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

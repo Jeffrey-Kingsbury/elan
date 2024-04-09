@@ -10,8 +10,8 @@
   "name":"obj_pause_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"menu",
-    "path":"folders/_MENU/menu.yy",
+    "name":"_MENU",
+    "path":"folders/_MENU.yy",
   },
   "parentObjectId":null,
   "persistent":false,

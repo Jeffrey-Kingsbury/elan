@@ -20,6 +20,7 @@ input_check("run")
 
 global._player_x = x;
 global._player_y = y;
+global._player_room = room;
 
 // Update last_direction based on current input
 if (_right_key != 0 && _left_key == 0) {

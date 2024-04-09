@@ -71,10 +71,10 @@ switch(menu_level){
 		
 		case 3:
 			// Load
-			if(!file_exists("save.json")){
+			if(!file_exists("save_" + string(global._save_slot) + ".json")){
 				audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.1);
 			} else {
-				load_game()
+				load_game(global._save_slot)
 				audio_play_sound(snd_menu_opt_selected_chime, 1, false, 0.5, 0, 0.5);
 				game_pause = false;
 				instance_activate_all();

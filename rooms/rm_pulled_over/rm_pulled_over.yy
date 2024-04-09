@@ -1,13 +1,12 @@
 {
   "$GMRoom":"",
   "%Name":"rm_pulled_over",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_pulled_over/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_683B8EBE_1","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
-    {"name":"inst_131F8703_1","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
     {"name":"inst_6F133266","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
     {"name":"inst_29AF705","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
     {"name":"inst_6ED909EF","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
@@ -20,7 +19,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_3","depth":-201,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"Instances_3","depth":-101,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_3028E6D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3028E6D6","objectId":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},"propertyId":{"name":"fader","path":"objects/obj_fader/obj_fader.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},"propertyId":{"name":"destroy","path":"objects/obj_fader/obj_fader.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
@@ -30,9 +29,6 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},"propertyId":{"name":"start_alpha","path":"objects/obj_fader/obj_fader.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.5,"scaleY":5.5,"x":0.0,"y":19680.0,},
       ],"layers":[],"name":"Instances_3","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"init","depth":-101,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_131F8703_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_131F8703_1","objectId":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":18816.0,},
-      ],"layers":[],"name":"init","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_2","depth":-1,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_683B8EBE_1","colour":2885681151,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_683B8EBE_1","objectId":{"name":"obj_black_screen","path":"objects/obj_black_screen/obj_black_screen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.5,"scaleY":316.0,"x":-32.0,"y":-160.0,},
       ],"layers":[],"name":"Instances_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

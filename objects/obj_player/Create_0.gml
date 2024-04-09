@@ -25,6 +25,3 @@ face = IDLE_DOWN;
 is_pooping = false;
 set_poop_face = false;
 draw_exit_pooping = false;
-
-
-global._player_room = room;

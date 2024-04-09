@@ -13,9 +13,9 @@ function save_game(_slot = 0){
      _save = {
 		"save_slot": int64(_slot),
 		"player_name": "",
-		"player_x": 0,
-		"player_y": 0,
-		"player_room": 0,
+		"player_x": 119,
+		"player_y": 229,
+		"player_room": "@ref room(rm_house_01_upstairs)",
 		"player_visited_rooms": global.visited_rooms,
 		"player_inventory": global.player_inventory,
 		"player_seen_news": global._player_seen_news
@@ -28,12 +28,17 @@ function save_game(_slot = 0){
     file_text_close(_file);
   }
 
-  // Update save data (replace with your actual logic)
-  _save.player_name = global.player_name;
-  _save.player_x = global._player_x;
-  _save.player_y = global._player_y;
-  _save.player_room = global._player_room;
-  // Update other player data as needed
+  // Update save data
+  	_save.player_name = global.player_name;
+  if(global._player_room == ""){
+	_save.player_x = 119;
+	_save.player_y = 229;
+	_save.player_room = "@ref room(rm_house_01_upstairs)";
+  } else {
+	_save.player_x = global._player_x;
+	_save.player_y = global._player_y;
+	_save.player_room = global._player_room;
+  }
 
   // Write updated save data
   var _file = file_text_open_write(_save_file_name);

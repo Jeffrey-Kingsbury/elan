@@ -38,7 +38,7 @@ for(var _i = 0; _i < op_length; _i++){
 	
 	if(menu_level == 0){
 		if(_i == 3){
-			if(file_exists("save.json")){
+			if(file_exists("save_" + string(global._save_slot) + ".json")){
 					draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c,_c,_c,_c,1);	
 			} else {
 					draw_text_color(x + op_border, y + op_border + op_space * _i, option[menu_level, _i], _c_d,_c_d,_c_d,_c_d,1);	
