@@ -209,7 +209,7 @@ draw_set_color(c_white);
 
 if(array_contains(moving_rooms, room)){ //hacky fix on moving textboxes. You lose text effects but thats the fix
 var _draw_txt = string_copy(text[page], 1, draw_char)
-draw_text_ext(_txtb_x + border, _txtb_y + border + _float_y, _draw_txt, line_sep, line_width);
+draw_text_ext(_txtb_x + border, _txtb_y + border, _draw_txt, line_sep, line_width);
 
 } else {
 	

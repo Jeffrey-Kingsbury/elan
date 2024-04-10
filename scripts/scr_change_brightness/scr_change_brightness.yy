@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_change_brightness",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_change_brightness",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/_MENU/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_resume_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_resume_game",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/_MENU/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

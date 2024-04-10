@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_exit_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_exit_game",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/_MENU/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

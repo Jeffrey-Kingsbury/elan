@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_change_window_mode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_change_window_mode",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/_MENU/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
