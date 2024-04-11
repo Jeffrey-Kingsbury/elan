@@ -96,7 +96,7 @@ if(!setup)
 //typing the text out
 if(draw_char < text_length[page])
 {
-	audio_play_sound(snd_text_typing_beep,1, false,random(0.2),0,random(2));	
+	audio_play_sound_on(global.sfx_emit, snd_text_typing_beep, false, 1, random(0.2),0, random(2));
 	draw_char += text_spd;
 	draw_char = clamp(draw_char, 0, text_length[page]);
 }

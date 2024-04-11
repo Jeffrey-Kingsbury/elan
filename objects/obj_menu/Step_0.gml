@@ -21,7 +21,7 @@ if (back_key)
         {
             audio_stop_sound(snd_intro_credit_menu);
             audio_resume_all();
-            audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, global.sfx_vol, false, 0.5, 0, 0.4);
+            audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, false, 1, 1, 0, 0.4);
             instance_activate_all();
             display_set_gui_maximize();
             page = 0;
@@ -32,7 +32,7 @@ if (back_key)
     else
     {
         audio_pause_all();
-        audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, false, 1, 1, 1);
+        audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, false, 1);
         audio_play_sound_on(global.music_emit,snd_intro_credit_menu, true, 1);
         instance_deactivate_all(true);
         instance_activate_object(input_controller_object);
@@ -58,7 +58,7 @@ if (inputting)
         case _MENU_ELEMENT_TYPE.SHIFT:
 		var hinput = right_key - left_key;
 		if(hinput != 0){
-				audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, 1, false, 0.25, 0, 1.25);
+				audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, false, 1, 1, 0, 1.25);
 				ds_grid[# 3, menu_option[page]] += hinput;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, array_length(ds_grid[# 4, menu_option[page]]) - 1);
 		}
@@ -73,7 +73,7 @@ if (inputting)
         case _MENU_ELEMENT_TYPE.TOGGLE:
 				var hinput = right_key - left_key;
 		if(hinput != 0){
-				audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, 1, false, 0.25, 0, 1.25);
+				audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, false, 1, 1, 0, 1.25);
 				ds_grid[# 3, menu_option[page]] += hinput;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
 		}
@@ -87,7 +87,7 @@ else
     var ochange = down_key - up_key;
     if (ochange != 0)
     {
-        audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, 1, false, 0.5, 0, 1);
+        audio_play_sound_on(global.sfx_emit, snd_menu_opt_switch_chime, false, 1);
         menu_option[page] += ochange;
         if (menu_option[page] > ds_height - 1)
         {
@@ -101,7 +101,7 @@ else
 }
 if (interact_key)
 {
-    audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, 1, false, 0.5, 0, 1);
+    audio_play_sound_on(global.sfx_emit, snd_menu_opt_selected_chime, false, 1);
     switch (ds_grid[# 1, menu_option[page]])
     {
         case _MENU_ELEMENT_TYPE.PAGE_TRANSFER:

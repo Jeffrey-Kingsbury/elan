@@ -1,4 +1,4 @@
-function save_game(_slot = 0){
+function save_game(_slot = global._save_slot){
   // Validate _slot number (optional)
   if (_slot < 0) {
     show_message("Error: Invalid save _slot!");
@@ -48,7 +48,8 @@ function save_game(_slot = 0){
   return true; // Indicate successful save
 }
 
-function load_game(_slot){
+function load_game(_slot = global._save_slot){
+	audio_stop_all();
 	var _file = file_text_open_read("save_" + string(_slot) + ".json");
 	var _json = file_text_read_string(_file);
 	var _data = json_parse(_json);

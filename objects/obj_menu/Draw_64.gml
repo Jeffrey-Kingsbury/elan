@@ -22,6 +22,10 @@ draw_set_halign(fa_right);
 var ltx = start_x - x_buffer;
 var lty;
 	var yy = 0;
+			if(menu_pages[page] == ds_exit_prompt or menu_pages[page] == ds_load_prompt){
+				draw_set_font(fnt_intro)
+				draw_text_color(ltx, start_y - 64, "ARE YOU SURE?", c_white,c_white,c_white,c_white,1);	
+			}
 	repeat(ds_height){
 		lty = start_y + (yy * y_buffer);
 		draw_set_font(fnt_intro)

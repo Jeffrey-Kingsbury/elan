@@ -5,10 +5,13 @@ global._player_y = 0;
 global._player_room = "";
 global._player_seen_news = [];
 global._save_slot = 0;
+
+//SETTINGS
 global.music_vol = 1;
 global.sfx_vol = 1;
 global.sfx_emit = audio_emitter_create();
 global.music_emit = audio_emitter_create();
+global.fullscreen = true;
 
 	function set_player_face_to_idle(){
         if(obj_player.face == UP) {

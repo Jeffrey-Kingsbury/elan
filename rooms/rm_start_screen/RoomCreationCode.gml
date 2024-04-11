@@ -18,5 +18,24 @@ if(file_exists("vol.json")){
   
 }
 
+if(file_exists("settings.json")){
+	var _file = file_text_open_read("settings.json");
+	var _json = file_text_read_string(_file);
+	var _data = json_parse(_json);
+	global.fullscreen = _data.fullscreen;
+	window_set_fullscreen(_data.fullscreen);
+} else {
+	var _save_file_name = "settings.json";
+	var _save = {
+	"fullscreen":true
+	}
+	global.fullscreen = true;
+	window_set_fullscreen(true);
+	var _file = file_text_open_write(_save_file_name);
+	file_text_write_string(_file, json_stringify(_save));
+	file_text_close(_file);
+  
+}
+
 var _sound = audio_play_sound_on(global.music_emit, snd_intro_credit_menu, 1, true, 0);
 audio_sound_gain(_sound, 1, 5000);
