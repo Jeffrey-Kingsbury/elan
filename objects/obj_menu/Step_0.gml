@@ -7,7 +7,7 @@ var right_key_held = input_check("right");
 var interact_key = input_check_pressed("interact");
 var back_key = input_check_pressed("pause");
 
-if (back_key)
+if (back_key and !inputting)
 {
     if (global.pause)
     {

@@ -280,6 +280,7 @@
     {"id":{"name":"rm_pulled_over","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},},
     {"id":{"name":"rm_start_screen","path":"rooms/rm_start_screen/rm_start_screen.yy",},},
     {"id":{"name":"rm_taxi_to_p","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},},
+    {"id":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
     {"id":{"name":"__input_class_binding","path":"scripts/__input_class_binding/__input_class_binding.yy",},},
@@ -1177,6 +1178,7 @@
     {"roomId":{"name":"rm_name_entry","path":"rooms/rm_name_entry/rm_name_entry.yy",},},
     {"roomId":{"name":"rm_pulled_over","path":"rooms/rm_pulled_over/rm_pulled_over.yy",},},
     {"roomId":{"name":"rm_taxi_to_p","path":"rooms/rm_taxi_to_p/rm_taxi_to_p.yy",},},
+    {"roomId":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

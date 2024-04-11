@@ -229,6 +229,7 @@
     {"name":"rm_name_entry","order":6,"path":"rooms/rm_name_entry/rm_name_entry.yy",},
     {"name":"rm_pulled_over","order":1,"path":"rooms/rm_pulled_over/rm_pulled_over.yy",},
     {"name":"rm_start_screen","order":1,"path":"rooms/rm_start_screen/rm_start_screen.yy",},
+    {"name":"Room12","order":2,"path":"rooms/Room12/Room12.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
