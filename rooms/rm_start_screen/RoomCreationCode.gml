@@ -1,6 +1,3 @@
-global.sfx_emit = audio_emitter_create();
-global.music_emit = audio_emitter_create();
-
 if(file_exists("vol.json")){
 	var _file = file_text_open_read("vol.json");
 	var _json = file_text_read_string(_file);
