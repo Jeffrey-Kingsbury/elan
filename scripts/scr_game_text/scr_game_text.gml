@@ -106,8 +106,8 @@ switch(_text_id){
 	
 	break;
 	
-	
 	case "bed_01_1":
+	audio_play_sound_on(global.sfx_emit, snd_alarm_clock, true, 1);
 	inst_house_01_player.block_input = false;
 	scr_text("huh, wha-?", "player");	
 	scr_text("ughhh..", "player-no");
@@ -203,7 +203,9 @@ function scr_interactable_text(_text_id){
 			scr_text("A chest of drawers");
 		break;
 		
-		
+		case "bed_01_upstairs_note":
+			scr_text("We regret to inform you that your loan request has been denied....", "note");	
+		break;
 		
 		case "house_01_downstairs_tv_01":
 			scr_text("The body of seventeen year old Dawn Marie Birnbaum was discovered late last night in a snowbank off Interstate 80.", "news");		

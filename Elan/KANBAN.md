@@ -6,30 +6,30 @@ kanban-plugin: basic
 
 ## TODO
 
-- [ ] House upstairs final
-- [ ] House downstairs final
-- [ ] Taxi to P final
 - [ ] Pulled over final
 - [ ] Ps house init
 
 
 ## WORKING
 
-- [ ] Save functionality
-- [ ] Load functionality
+- [ ] Taxi to P final
 
 
 ## TESTING
 
-- [ ] Menu system
+- [ ] Save functionality
+- [ ] Load functionality
 
 
 ## DONE
 
 **Complete**
 - [x] House upstairs init
+- [x] House upstairs final
+- [x] Menu system
 - [x] Taxi to P init
 - [x] Settings
+- [x] House downstairs final
 - [x] Dialogue system
 - [x] pooping
 - [x] input extension

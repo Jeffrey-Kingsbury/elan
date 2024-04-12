@@ -72,6 +72,12 @@ function scr_text(_text){
 			speaker_side[page_number] = -1;
 		break;
 		
+		case "note":
+			speaker_sprite[page_number] = spr_note_portrait;
+			txtb_spr[page_number] = spr_dialog_box_blu;
+			speaker_side[page_number] = -1;
+		break;
+		
 		case "taxi":
 			speaker_sprite[page_number] = spr_dad_portrait_speaking;
 			txtb_spr[page_number] = spr_dialog_box_yel;

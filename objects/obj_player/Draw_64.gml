@@ -1,7 +1,7 @@
 var startX = 10;
 var startY = 10;
-var xSpacing = 40;
-var ySpacing = 40;
+var xSpacing = 64;
+var ySpacing = 64;
 var quantityOffsetX = 26;  // Adjust as needed for bottom right
 var quantityOffsetY = 10;  // Adjust as needed for bottom right
 var fontSize = 1;        // Adjust as needed for text size

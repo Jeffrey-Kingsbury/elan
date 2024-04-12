@@ -29,15 +29,13 @@ switch(argument0){
 }
 
 if(file_exists("settings.json")){
-	var _save_file_name = "vol.json";
-	var _save = 
-		{
-	"fullscreen":global.fullscreen,
-	"resolution": global.resolution
-	}
-	
-	var _file = file_text_open_write(_save_file_name);
-	file_text_write_string(_file, json_stringify(_save));
+	var _file = file_text_open_read("settings.json");
+	var _json = file_text_read_string(_file);
+	var _data = json_parse(_json);
+	_data.resolution = global.resolution;
+	file_text_close(_file);
+	_file = file_text_open_write("settings.json");
+	file_text_write_string(_file, json_stringify(_data));
 	file_text_close(_file);
   
 }	

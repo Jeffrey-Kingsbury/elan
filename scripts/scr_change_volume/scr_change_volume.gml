@@ -18,16 +18,16 @@ function change_master_volume(vol){
 
 
 function save_volume(){
-if(file_exists("vol.json")){
-	var _save_file_name = "vol.json";
-	var _save = {
-	"master": global.master_vol,
-	"music_vol": global.music_vol,
-	"sfx_vol": global.sfx_vol
-	}
-	var _file = file_text_open_write(_save_file_name);
-	file_text_write_string(_file, json_stringify(_save));
+if(file_exists("settings.json")){
+	var _file = file_text_open_read("settings.json");
+	var _json = file_text_read_string(_file);
+	var _data = json_parse(_json);
+	_data.master_vol = global.master_vol;
+	_data.music_vol = global.music_vol;
+	_data.sfx_vol = global.sfx_vol;
 	file_text_close(_file);
-  
+	_file = file_text_open_write("settings.json");
+	file_text_write_string(_file, json_stringify(_data));
+	file_text_close(_file);
 }	
 }
