@@ -18,7 +18,8 @@ function save_game(_slot = global._save_slot){
 		"player_room": "@ref room(rm_house_01_upstairs)",
 		"player_visited_rooms": global.visited_rooms,
 		"player_inventory": global.player_inventory,
-		"player_seen_news": global._player_seen_news
+		"player_seen_news": global._player_seen_news,
+		"text_states" : global.text_states
     };
   } else {
     // Read existing save data
@@ -30,6 +31,10 @@ function save_game(_slot = global._save_slot){
 
   // Update save data
   	_save.player_name = global.player_name;
+	_save.text_states = global.text_states;
+	_save.player_inventory = global.player_inventory;
+	_save.player_seen_news = global._player_seen_news;
+	_save.player_visited_rooms = global.visited_rooms;
   if(global._player_room == ""){
 	_save.player_x = 119;
 	_save.player_y = 229;
@@ -62,6 +67,7 @@ function load_game(_slot = global._save_slot){
 	global._player_y = _data.player_y;
 	global.visited_rooms = _data.player_visited_rooms;
 	global.player_inventory = _data.player_inventory;
+	global.text_states = _data.text_states
 
 }
 

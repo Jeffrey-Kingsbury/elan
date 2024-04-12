@@ -2,6 +2,7 @@ if(file_exists("vol.json")){
 	var _file = file_text_open_read("vol.json");
 	var _json = file_text_read_string(_file);
 	var _data = json_parse(_json);
+	global.master_vol = _data.master_vol;
 	global.music_vol = _data.music_vol;
 	global.sfx_vol = _data.sfx_vol;
 	audio_emitter_gain(global.music_emit, _data.music_vol);
@@ -9,6 +10,7 @@ if(file_exists("vol.json")){
 } else {
 	var _save_file_name = "vol.json";
 	var _save = {
+	"master_vol": 1,
 	"music_vol": 1,
 	"sfx_vol": 1
 	}
@@ -23,13 +25,17 @@ if(file_exists("settings.json")){
 	var _json = file_text_read_string(_file);
 	var _data = json_parse(_json);
 	global.fullscreen = _data.fullscreen;
+	global.resolution = _data.resolution;
+	change_resolution(_data.resolution);
 	window_set_fullscreen(_data.fullscreen);
 } else {
 	var _save_file_name = "settings.json";
 	var _save = {
-	"fullscreen":true
+	"fullscreen":true,
+	"resolution": 3
 	}
 	global.fullscreen = true;
+	change_resolution(3)
 	window_set_fullscreen(true);
 	var _file = file_text_open_write(_save_file_name);
 	file_text_write_string(_file, json_stringify(_save));

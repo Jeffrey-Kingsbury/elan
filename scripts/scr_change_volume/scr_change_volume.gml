@@ -4,16 +4,24 @@ function change_sfx_volume(vol){
 	save_volume();
 }
 
-function change_music_volue(vol){
+function change_music_volume(vol){
 	global.music_vol = vol;
 	audio_emitter_gain(global.music_emit, vol);
 	save_volume();
 }
 
+function change_master_volume(vol){
+	global.master_vol = vol;
+	audio_master_gain(vol);
+	save_volume();
+}
+
+
 function save_volume(){
 if(file_exists("vol.json")){
 	var _save_file_name = "vol.json";
 	var _save = {
+	"master": global.master_vol,
 	"music_vol": global.music_vol,
 	"sfx_vol": global.sfx_vol
 	}

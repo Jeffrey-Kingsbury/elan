@@ -28,9 +28,10 @@ ds_menu_main = create_menu_page(
 );
 
 ds_settings = create_menu_page(
-["MUSIC VOLUME", _MENU_ELEMENT_TYPE.SLIDER, change_music_volue, global.music_vol, [0,1]],
+["MASTER VOLUME", _MENU_ELEMENT_TYPE.SLIDER, change_master_volume, global.master_vol, [0,1]],
+["MUSIC VOLUME", _MENU_ELEMENT_TYPE.SLIDER, change_music_volume, global.music_vol, [0,1]],
 ["SFX VOLUME", _MENU_ELEMENT_TYPE.SLIDER, change_sfx_volume, global.sfx_vol, [0,1]],
-["RESOLUTION", _MENU_ELEMENT_TYPE.SHIFT, change_resolution, 3, ["1280x720", "1366x768", "1600x900", "1920x1080", "2560x1440", "3840x2160"]],
+["WINDOW SIZE", _MENU_ELEMENT_TYPE.SHIFT, change_resolution, 3, ["1280x720", "1366x768", "1600x900", "1920x1080", "2560x1440", "3840x2160"]],
 ["FULLSCREEN", _MENU_ELEMENT_TYPE.TOGGLE, change_window_mode, 0, ["FULLSCREEN", "WINDOWED"]],
 ["BACK", _MENU_ELEMENT_TYPE.PAGE_TRANSFER, _MENU_PAGE._MAIN]
 )

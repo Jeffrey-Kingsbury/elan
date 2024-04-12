@@ -75,15 +75,40 @@ switch(_text_id){
 	break;
 	
 	case "bed_01_dad":
+	if(!global.text_states.bed_01_dad_money){
 		scr_text("Hey dad, I'm heading out.", "player");
 		scr_text("You're going to hang out with P?", "dad", -1);
 		scr_text("Alright, well. It's really coming down out there...", "dad-no", -1);
-		scr_text("Better bring your galoshes, " + global.player_name, "dad-yes", -1);
+		scr_text("Here " + global.player_name + ". Why don't you take a cab. It's on me.", "dad-yes", -1);
+		global.text_states.bed_01_dad_money = true;
+		instance_create_depth(0,0,1,obj_script_give_cab_fare);
+	}
+	else {
+		scr_text("Get outta here! I'm not paying for P too.", "dad-no", -1);
+	}
 	break;
+	
 
+
+	case "bed_01_mom":
+	if(!global.text_states.bed_01_mom_money){
+		scr_text("Hey mom! I'm going to head over to see P.", "player");
+		scr_text("Do you think, since its raining and all... Do you think you could loan me some money for a cab?", "player-yes");
+		scr_text("Oh course, "+ global.player_name + ". But I'm trusting you to only spend this on the cab there and back okay?", "mom");
+		scr_text("Money is a little tight.... But it's fine. Go have fun.", "mom");
+		global.text_states.bed_01_mom_money = true;
+		instance_create_depth(0,0,1,obj_script_give_cab_fare);
+	} else {
+		
+		scr_text("Have fun with P, sweetie.", "mom", -1);
+	}
+	
+	
+	break;
+	
+	
 	case "bed_01_1":
 	inst_house_01_player.block_input = false;
-	//audio_play_sound(snd_alarm_clock, 1, true)
 	scr_text("huh, wha-?", "player");	
 	scr_text("ughhh..", "player-no");
 		scr_option("I'm up!", "bed_01_opt_01")		
@@ -92,7 +117,7 @@ switch(_text_id){
 	
 		case "bed_01_opt_01":
 			audio_stop_sound(snd_alarm_clock)
-			audio_play_sound(snd_click, 1, false);
+			audio_play_sound_on(global.sfx_emit, snd_click, false, 1);
 			inst_house_01_fader.fader = true;
 			inst_upstairs_activate_menu._init = true;
 		scr_text("*click*");
@@ -218,6 +243,8 @@ function scr_interactable_text(_text_id){
 			
 		case "bed_01_need_key":
 			scr_text("I should grab my car keys before heading out.");
+			scr_text("My wallet is also a little light...Maybe I could get some spending money from mom.");
+
 		break;
 		
 		case "house_01_get_key":

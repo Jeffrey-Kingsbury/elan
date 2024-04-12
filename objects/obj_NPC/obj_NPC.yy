@@ -44,6 +44,7 @@
     {"$GMObjectProperty":"","%Name":"reset_face","filters":[],"listItems":[],"multiselect":false,"name":"reset_face","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"","%Name":"reset_asset","filters":[],"listItems":[],"multiselect":false,"name":"reset_asset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
     {"$GMObjectProperty":"","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"pathing_speed","filters":[],"listItems":[],"multiselect":false,"name":"pathing_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.6","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

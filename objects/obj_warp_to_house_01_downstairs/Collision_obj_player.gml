@@ -21,7 +21,7 @@ if(_has_key || array_contains(global.visited_rooms, "rm_house_01_upstairs")){
 		inst_house_01_fader.fade_dir = "in";
 		inst_house_01_fader.fader = true;
 		inst_house_01_fader.fade_speed = 0.05;
-		audio_play_sound(snd_door_open_close, 1, false);	
+		audio_play_sound_on(global.sfx_emit, snd_door_open_close,false,1);	
 		array_delete(global.player_inventory, _key_index, 1);
 		alarm[0] = 1;
 		save_game();

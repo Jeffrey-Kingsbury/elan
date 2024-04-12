@@ -15,14 +15,13 @@ kanban-plugin: basic
 
 ## WORKING
 
-- [ ] Menu system
+- [ ] Save functionality
 - [ ] Load functionality
-- [ ] Settings
 
 
 ## TESTING
 
-- [ ] Save functionality
+- [ ] Menu system
 
 
 ## DONE
@@ -30,6 +29,7 @@ kanban-plugin: basic
 **Complete**
 - [x] House upstairs init
 - [x] Taxi to P init
+- [x] Settings
 - [x] Dialogue system
 - [x] pooping
 - [x] input extension

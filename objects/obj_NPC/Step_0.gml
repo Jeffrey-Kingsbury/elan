@@ -11,8 +11,24 @@ if (instance_exists(obj_player)) {
 
 if (instance_exists(obj_textbox)) {
     speed = 0;
+	if(pathing){
+		path_speed = 0;	
+	sprite_index = sprite[face];
+if (direction >= 0 && direction < 85) {
+    face = IDLE_RIGHT;
+} else if (direction >= 85 && direction < 175) {
+    face = IDLE_UP;
+} else if (direction >= 175 && direction < 265) {
+    face = IDLE_LEFT;
+} else {
+    face = IDLE_DOWN;
+}
+		
+	}
     exit;
 }
+
+path_speed = pathing_speed;
 
 if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(16, obj_player.direction), obj_player.y + lengthdir_y(16, obj_player.direction), self, 0, 0)) {
     if (talking_text != "") {

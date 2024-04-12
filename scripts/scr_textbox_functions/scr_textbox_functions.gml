@@ -45,6 +45,27 @@ function scr_text(_text){
 			speaker_name[page_number] = "dad";
 		break;
 		
+		case "mom-no":
+			speaker_sprite[page_number] = spr_mom_portrait_no;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "mom";
+			speaker_side[page_number] = -1;
+		break;
+		
+		case "mom-yes":
+			speaker_sprite[page_number] = spr_mom_portrait_yes;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "mom";
+			speaker_side[page_number] = -1;
+		break;
+		
+		case "mom":
+			speaker_sprite[page_number] = spr_mom_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_brn;
+			speaker_name[page_number] = "mom";
+			speaker_side[page_number] = -1;
+		break;
+		
 		case "news":
 			speaker_sprite[page_number] = spr_breaking_news;
 			txtb_spr[page_number] = spr_dialog_box_red;
