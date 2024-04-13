@@ -148,11 +148,23 @@ switch(_text_id){
 		case "bought_and_paid_for_taxi_01":
 			scr_text("Not very talkative are you...", "taxi");
 			scr_text("That's alright...", "taxi");
+			scr_text("I can talk enough for the both of us.", "taxi");
+				scr_option("Remain silent", "bought_and_paid_for_taxi_03");
+				scr_option("Sorry, I was zoned out.", "bought_and_paid_for_taxi_02");
 			break;
 			
+		case "bought_and_paid_for_taxi_03":
+			scr_text("This whole area has gone to shit recently.", "taxi");
+			scr_text("It used to be such a nice place. A place where you could raise a family, you know?", "taxi");
+			scr_text("All these damned dope fiends really took over. You're not into that shit are you?", "taxi");
+
+		break;
+		
 		case "bought_and_paid_for_taxi_02":
 			scr_text("Mind if I ask what brings you to this part of town so late?", "taxi");
-			break;
+				scr_option("I'm just visiting a friend.", "bought_and_paid_for_taxi_03");
+				scr_option("I'd rather not say...", "bought_and_paid_for_taxi_02");
+		break;
 			
 			
 			//PULLED OVER

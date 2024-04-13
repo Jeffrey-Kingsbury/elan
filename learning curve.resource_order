@@ -862,6 +862,7 @@
     {"name":"spr_wall","order":3,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_warp_block","order":4,"path":"sprites/spr_warp_block/spr_warp_block.yy",},
     {"name":"Sprite353","order":16,"path":"sprites/Sprite353/Sprite353.yy",},
+    {"name":"spr_911_red_tag","order":5,"path":"sprites/spr_911_red_tag/spr_911_red_tag.yy",},
     {"name":"TAXI_CLEAN_ALLD0000_sheet","order":1,"path":"sprites/TAXI_CLEAN_ALLD0000_sheet/TAXI_CLEAN_ALLD0000_sheet.yy",},
     {"name":"TAXI_CLEAN_ALLD0001","order":1,"path":"sprites/TAXI_CLEAN_ALLD0001/TAXI_CLEAN_ALLD0001.yy",},
     {"name":"TAXI_CLEAN_ALLD0002","order":2,"path":"sprites/TAXI_CLEAN_ALLD0002/TAXI_CLEAN_ALLD0002.yy",},
