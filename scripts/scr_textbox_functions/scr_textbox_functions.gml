@@ -79,7 +79,21 @@ function scr_text(_text){
 		break;
 		
 		case "taxi":
-			speaker_sprite[page_number] = spr_dad_portrait_speaking;
+			speaker_sprite[page_number] = spr_taxi_portrait_speaking;
+			txtb_spr[page_number] = spr_dialog_box_yel;
+			speaker_side[page_number] = -1;
+			speaker_name[page_number] = "Taxi Driver";
+		break;
+		
+		case "taxi-yes":
+			speaker_sprite[page_number] = spr_taxi_portrait_yes;
+			txtb_spr[page_number] = spr_dialog_box_yel;
+			speaker_side[page_number] = -1;
+			speaker_name[page_number] = "Taxi Driver";
+		break;
+		
+		case "taxi-no":
+			speaker_sprite[page_number] = spr_taxi_portrait_no;
 			txtb_spr[page_number] = spr_dialog_box_yel;
 			speaker_side[page_number] = -1;
 			speaker_name[page_number] = "Taxi Driver";

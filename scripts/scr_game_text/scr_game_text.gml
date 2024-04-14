@@ -146,26 +146,34 @@ switch(_text_id){
 		break;
 		
 		case "bought_and_paid_for_taxi_01":
-			scr_text("Not very talkative are you...", "taxi");
-			scr_text("That's alright...", "taxi");
+			scr_text("Not very talkative are you...", "taxi-no");
+			scr_text("That's alright...", "taxi-yes");
 			scr_text("I can talk enough for the both of us.", "taxi");
 				scr_option("Remain silent", "bought_and_paid_for_taxi_03");
 				scr_option("Sorry, I was zoned out.", "bought_and_paid_for_taxi_02");
 			break;
 			
 		case "bought_and_paid_for_taxi_03":
+			scr_text("This whole area has gone to shit recently.", "taxi-no");
+			scr_text("It used to be such a nice place. A place where you could raise a family, you know?", "taxi-no");
+			scr_text("All these damned dope fiends really took over. You're not into that shit are you?", "taxi-no");
+
+		break;
+		
+		case "bought_and_paid_for_taxi_02":
+			scr_text("You're like what, 16, 17?", "taxi");
+			scr_text("Mind if I ask what brings you to this part of town so late?", "taxi");
+				scr_option("I'm just visiting a friend.", "bought_and_paid_for_taxi_03");
+				scr_option("I'd rather not say...", "bought_and_paid_for_taxi_05");
+		break;
+			
+		case "bought_and_paid_for_taxi_05":
+			scr_text("This whole area has gone to shit recently.", "taxi");
 			scr_text("This whole area has gone to shit recently.", "taxi");
 			scr_text("It used to be such a nice place. A place where you could raise a family, you know?", "taxi");
 			scr_text("All these damned dope fiends really took over. You're not into that shit are you?", "taxi");
 
 		break;
-		
-		case "bought_and_paid_for_taxi_02":
-			scr_text("Mind if I ask what brings you to this part of town so late?", "taxi");
-				scr_option("I'm just visiting a friend.", "bought_and_paid_for_taxi_03");
-				scr_option("I'd rather not say...", "bought_and_paid_for_taxi_02");
-		break;
-			
 			
 			//PULLED OVER
 			
