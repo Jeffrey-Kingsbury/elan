@@ -1,7 +1,7 @@
-_up_key = input_check_pressed("up");
-_down_key = input_check_pressed("down");
-_interact_key = input_check_pressed("interact");
-_back_key = input_check_pressed("pause");
+var _up_key = input_check_pressed("up");
+var _down_key = input_check_pressed("down");
+var _interact_key = input_check_pressed("interact");
+var _back_key = input_check_pressed("pause");
 
 
 op_length = array_length(option)

@@ -10,7 +10,7 @@ if (collision_line(obj_player.x, obj_player.y, obj_player.x + lengthdir_x(16, ob
 
     if (input_check_pressed("interact") == 1) {
 
-        if (text_id != "" && !instance_exists(obj_textbox)) {
+        if (array_length(text_id) != 0 && !instance_exists(obj_textbox)) {
             var _ran_text = irandom(array_length(text_id) - 1);
 			
 			if(_is_news){

@@ -157,7 +157,8 @@ switch(_text_id){
 			scr_text("This whole area has gone to shit recently.", "taxi-no");
 			scr_text("It used to be such a nice place. A place where you could raise a family, you know?", "taxi-no");
 			scr_text("All these damned dope fiends really took over. You're not into that shit are you?", "taxi-no");
-
+				scr_option("Remain silent", "bought_and_paid_for_taxi_06");
+				scr_option("Yeah it's gotten bad.", "bought_and_paid_for_taxi_05");
 		break;
 		
 		case "bought_and_paid_for_taxi_02":
@@ -168,11 +169,14 @@ switch(_text_id){
 		break;
 			
 		case "bought_and_paid_for_taxi_05":
-			scr_text("This whole area has gone to shit recently.", "taxi");
-			scr_text("This whole area has gone to shit recently.", "taxi");
-			scr_text("It used to be such a nice place. A place where you could raise a family, you know?", "taxi");
-			scr_text("All these damned dope fiends really took over. You're not into that shit are you?", "taxi");
-
+			global._taxi_to_p_ending = true;
+			scr_text("Sorry, I'm just making conversation.", "taxi");
+			scr_text("Anyways, we're pulling up now. Nice chatting with you. Give us a call if you need a lift back later.", "taxi");
+		break;
+			
+		case "bought_and_paid_for_taxi_06":
+			global._taxi_to_p_ending = true;
+			scr_text("Anyways, we're pulling up now. Nice chatting with you. Give us a call if you need a lift back later.", "taxi");
 		break;
 			
 			//PULLED OVER

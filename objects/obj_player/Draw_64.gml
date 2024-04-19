@@ -1,25 +1,25 @@
-var startX = 10;
-var startY = 10;
-var xSpacing = 64;
-var ySpacing = 64;
-var quantityOffsetX = 26;  // Adjust as needed for bottom right
-var quantityOffsetY = 10;  // Adjust as needed for bottom right
-var fontSize = 1;        // Adjust as needed for text size
+var _start_x = 10;
+var _start_y = 10;
+var _x_spacing = 64;
+var _y_spacing = 64;
+var _qty_offset_x = 26;  // Adjust as needed for bottom right
+var _qty_offset_y = 10;  // Adjust as needed for bottom right
+var _font_size = 1;        // Adjust as needed for text size
 
-for (var i = 0; i < array_length(global.player_inventory); i++) {
+for (var _i = 0; _i < array_length(global.player_inventory); _i++) {
     // Draw the sprite
-    draw_sprite(global.player_inventory[i].sprite, 1, startX, startY);
+    draw_sprite(global.player_inventory[_i].sprite, 1, _start_x, _start_y);
 
 	draw_set_font(fnt_menu)
     // Draw the quantity
-    draw_text_transformed(startX + quantityOffsetX, startY + quantityOffsetY, string(global.player_inventory[i].qty),
-                          fontSize, fontSize, 0);  // 0 rotation
+    draw_text_transformed(_start_x +_qty_offset_x, _start_y + _qty_offset_y, string(global.player_inventory[_i].qty),
+                          _font_size, _font_size, 0);  // 0 rotation
 
-    startX += xSpacing;
+    _start_x += _x_spacing;
 
-    if (startX > 250) {
-        startX = 10;
-        startY += ySpacing;
+    if (_start_x > 250) {
+        _start_x = 10;
+        _start_y += _y_spacing;
     }
 }
 

@@ -3,9 +3,13 @@
   "%Name":"ts_mondern_ext_city_terrain",
   "autoTileSets":[],
   "macroPageTiles":{
-    "SerialiseHeight":0,
-    "SerialiseWidth":0,
-    "TileSerialiseData":[],
+    "SerialiseHeight":17,
+    "SerialiseWidth":22,
+    "TileCompressedData":[
+      -186,0,-2,1895,-20,0,-2,1895,-20,0,-2,1895,1,0,-9,1895,-10,0,-2,1895,1,0,-4,1895,1,1722,-4,1895,-10,
+      0,2,1895,1723,-20,0,-2,1895,-20,0,-2,1895,-20,0,-2,1895,-20,0,-2,1895,-10,0,
+    ],
+    "TileDataFormat":1,
   },
   "name":"ts_mondern_ext_city_terrain",
   "out_columns":66,
